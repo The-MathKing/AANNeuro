@@ -1,0 +1,544 @@
+{
+  "analysis": "E4_Pathology_vs_Cognition_Dissociation",
+  "n_samples": 298,
+  "n_donors": 93,
+  "n_cdr_specific_p01": 1035,
+  "n_braak_specific_p01": 371,
+  "n_donors_with_complete_phenotype": 117,
+  "n_donors_excluded_no_cortical_sample": 24,
+  "cortical_regions_used": [
+    "BM9_DLPFC",
+    "BM10_FP",
+    "BM22_STG",
+    "BM36_PHG",
+    "BM20_ITG"
+  ],
+  "n_genes_tested": 13237,
+  "braak_cdr_spearman_rho_among_donors": 0.47930230843516225,
+  "naive_expected_p01": 132.37,
+  "null_cdr_mean": 125.66,
+  "null_cdr_sd": 192.01831787618596,
+  "null_cdr_p95": 385.1999999999998,
+  "null_cdr_max": 2567,
+  "null_braak_mean": 132.036,
+  "null_braak_sd": 166.98510323978005,
+  "null_braak_p95": 464.7499999999993,
+  "null_braak_max": 1240,
+  "perm_p_cdr": 0.008991008991008992,
+  "perm_p_braak": 0.07592407592407592,
+  "observed_ratio": 2.789757412398922,
+  "null_ratio_median": 0.8888888888888888,
+  "null_ratio_p95": 11.812307692307689,
+  "null_ratio_max": 150.46153846153845,
+  "perm_p_ratio": 0.23776223776223776,
+  "n_permutations": 1000,
+  "sensitivity_all_donors": {
+    "null_cdr_mean": 142.37,
+    "null_cdr_sd": 272.9348660395004,
+    "null_cdr_p95": 532.1499999999999,
+    "null_braak_mean": 138.821,
+    "null_braak_sd": 205.03217054647791,
+    "null_braak_p95": 477.14999999999986,
+    "perm_p_cdr": 0.004995004995004995,
+    "perm_p_braak": 0.11888111888111888,
+    "perm_p_ratio": 0.0989010989010989,
+    "top_cdr_genes": [
+      {
+        "gene": "MIR1304",
+        "p": 1.1744755036917182e-07,
+        "beta_sign": -1.0
+      },
+      {
+        "gene": "EVA1B",
+        "p": 1.612182522620794e-06,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "ATP8B2",
+        "p": 2.171910146515603e-06,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "YIPF2",
+        "p": 2.5536701661548764e-06,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "SLC4A7",
+        "p": 4.598734275503476e-06,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "DUSP21",
+        "p": 7.207251962687311e-06,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "ALG13",
+        "p": 8.37371582714325e-06,
+        "beta_sign": -1.0
+      },
+      {
+        "gene": "POLR3D",
+        "p": 1.0263131115420807e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "NDUFB8",
+        "p": 1.1237806956521657e-05,
+        "beta_sign": -1.0
+      },
+      {
+        "gene": "IGFBP5",
+        "p": 1.4738796892998928e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "KRT81",
+        "p": 1.8255329188316136e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "ADCYAP1R1",
+        "p": 2.0232576751657814e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "EYA3",
+        "p": 2.176749310065108e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "DLEC1",
+        "p": 2.4681639587551984e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "UGGT1",
+        "p": 2.6920499368207954e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "COX6A2",
+        "p": 2.7309649797823187e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "PARD3",
+        "p": 3.100364952446776e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "RNF10",
+        "p": 3.2628263349005885e-05,
+        "beta_sign": -1.0
+      },
+      {
+        "gene": "RPH3A",
+        "p": 3.488540064058672e-05,
+        "beta_sign": -1.0
+      },
+      {
+        "gene": "SIX5",
+        "p": 3.687624737336868e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "ARGLU1",
+        "p": 3.780838428352228e-05,
+        "beta_sign": -1.0
+      },
+      {
+        "gene": "CHRNB2",
+        "p": 3.88938202637451e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "ATRN",
+        "p": 3.936123958083265e-05,
+        "beta_sign": -1.0
+      },
+      {
+        "gene": "PCYT1B",
+        "p": 4.534308612991689e-05,
+        "beta_sign": 1.0
+      },
+      {
+        "gene": "HPSE2",
+        "p": 4.59051107644544e-05,
+        "beta_sign": 1.0
+      }
+    ],
+    "n_donors": 117,
+    "n_cdr_p01": 1803,
+    "n_braak_p01": 275,
+    "n_cdr_fdr05": 801,
+    "n_braak_fdr05": 0
+  },
+  "n_cdr_specific_fdr05": 0,
+  "n_braak_specific_fdr05": 0,
+  "top_cdr_specific_genes": [
+    {
+      "gene": "RPH3A",
+      "cdr_beta": -0.6484887270741674,
+      "cdr_pvalue": 5.906442901953218e-06,
+      "cdr_qvalue": 0.0575060527914451,
+      "braak_beta": -0.06859248174037058,
+      "braak_pvalue": 0.6990345990826338,
+      "braak_qvalue": 0.9283930992174152
+    },
+    {
+      "gene": "MIR1304",
+      "cdr_beta": -1.706634097224383,
+      "cdr_pvalue": 1.2813308821345375e-05,
+      "cdr_qvalue": 0.0575060527914451,
+      "braak_beta": 0.3043739043673739,
+      "braak_pvalue": 0.5238819642239158,
+      "braak_qvalue": 0.8642792655431966
+    },
+    {
+      "gene": "SLC4A7",
+      "cdr_beta": 4.595148418312217,
+      "cdr_pvalue": 1.3033025487220314e-05,
+      "cdr_qvalue": 0.0575060527914451,
+      "braak_beta": -1.7167190628194102,
+      "braak_pvalue": 0.1767343631788166,
+      "braak_qvalue": 0.6672762783903508
+    },
+    {
+      "gene": "ZNF512B",
+      "cdr_beta": -2.6696715503205644,
+      "cdr_pvalue": 3.9534058430711724e-05,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": 0.16066762693293757,
+      "braak_pvalue": 0.8370161257240877,
+      "braak_qvalue": 0.9657092701307198
+    },
+    {
+      "gene": "ATRN",
+      "cdr_beta": -2.542867701123054,
+      "cdr_pvalue": 4.497209329678749e-05,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": 0.35790809443180704,
+      "braak_pvalue": 0.6316626922194286,
+      "braak_qvalue": 0.9060813889151037
+    },
+    {
+      "gene": "NPTXR",
+      "cdr_beta": -1.750508360157068,
+      "cdr_pvalue": 4.7693109447397535e-05,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": -0.464800027725064,
+      "braak_pvalue": 0.36449262428386736,
+      "braak_qvalue": 0.7957758317079915
+    },
+    {
+      "gene": "TESPA1",
+      "cdr_beta": -1.8787011752523854,
+      "cdr_pvalue": 5.259084438820968e-05,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": 0.1860206711537309,
+      "braak_pvalue": 0.7378256960190234,
+      "braak_qvalue": 0.9381148494178102
+    },
+    {
+      "gene": "SERF1A",
+      "cdr_beta": -2.0152805783368444,
+      "cdr_pvalue": 5.913823783174329e-05,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": 1.3934931348956145,
+      "braak_pvalue": 0.014385966429001428,
+      "braak_qvalue": 0.37559573495205506
+    },
+    {
+      "gene": "ARGLU1",
+      "cdr_beta": -1.7945926810515564,
+      "cdr_pvalue": 7.718750700499127e-05,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": 0.7650496615979762,
+      "braak_pvalue": 0.14930168404962857,
+      "braak_qvalue": 0.6346348818470168
+    },
+    {
+      "gene": "WSB2",
+      "cdr_beta": -1.384696387795713,
+      "cdr_pvalue": 9.036691389261216e-05,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": -0.1767033355416906,
+      "braak_pvalue": 0.6733136834885116,
+      "braak_qvalue": 0.9194937819392787
+    },
+    {
+      "gene": "FMR1",
+      "cdr_beta": -1.3154369040505627,
+      "cdr_pvalue": 9.1966106286085e-05,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": 0.2666055825787026,
+      "braak_pvalue": 0.5024470810339604,
+      "braak_qvalue": 0.8569632794287506
+    },
+    {
+      "gene": "SUCLA2",
+      "cdr_beta": -0.8959332288956319,
+      "cdr_pvalue": 9.611161509273428e-05,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": 0.3781515953279613,
+      "braak_pvalue": 0.1577667486229265,
+      "braak_qvalue": 0.6433636634385946
+    },
+    {
+      "gene": "DAZAP1",
+      "cdr_beta": -3.2482282775044022,
+      "cdr_pvalue": 0.0001014143127842347,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": 1.961811580501482,
+      "braak_pvalue": 0.03981299528120577,
+      "braak_qvalue": 0.4744319619531286
+    },
+    {
+      "gene": "GPATCH2L",
+      "cdr_beta": 4.758655674391868,
+      "cdr_pvalue": 0.00010462558152098815,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": -1.3206135455755463,
+      "braak_pvalue": 0.3596917736900596,
+      "braak_qvalue": 0.793728506203065
+    },
+    {
+      "gene": "AGRP",
+      "cdr_beta": 3.704289613158412,
+      "cdr_pvalue": 0.0001092234510955257,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": -3.3296789153932527,
+      "braak_pvalue": 0.0013097993880851891,
+      "braak_qvalue": 0.24043717636678336
+    },
+    {
+      "gene": "CYP20A1",
+      "cdr_beta": 5.6945692464037645,
+      "cdr_pvalue": 0.00011860021074861993,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": -2.3618712158511395,
+      "braak_pvalue": 0.16966490656972524,
+      "braak_qvalue": 0.6566970029847142
+    },
+    {
+      "gene": "STX3",
+      "cdr_beta": -7.375385205023979,
+      "cdr_pvalue": 0.00011937079833462155,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": 4.23758135124703,
+      "braak_pvalue": 0.05330073121835933,
+      "braak_qvalue": 0.5072809958967983
+    },
+    {
+      "gene": "SLC25A44",
+      "cdr_beta": -1.7843571727998842,
+      "cdr_pvalue": 0.00012434037758478935,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": 0.7593721993883116,
+      "braak_pvalue": 0.1594096150009221,
+      "braak_qvalue": 0.6451095259380156
+    },
+    {
+      "gene": "ERCC6L",
+      "cdr_beta": 4.5591150727329115,
+      "cdr_pvalue": 0.0001464518097611994,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": -1.0785245435393365,
+      "braak_pvalue": 0.44328172204151894,
+      "braak_qvalue": 0.8330763767138486
+    },
+    {
+      "gene": "WASF1",
+      "cdr_beta": -0.7662341953311331,
+      "cdr_pvalue": 0.00015182376412481934,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": -0.1887597442143511,
+      "braak_pvalue": 0.4252868146011086,
+      "braak_qvalue": 0.8249912678287666
+    }
+  ],
+  "top_braak_specific_genes": [
+    {
+      "gene": "FADD",
+      "cdr_beta": -0.29209363502727737,
+      "cdr_pvalue": 0.776378485473361,
+      "cdr_qvalue": 0.9037834853760337,
+      "braak_beta": 3.7996171568524684,
+      "braak_pvalue": 4.006931265414186e-05,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "ART3",
+      "cdr_beta": -0.6825796606182268,
+      "cdr_pvalue": 0.3537269342623418,
+      "cdr_qvalue": 0.6266016916929463,
+      "braak_beta": 2.7227262025406103,
+      "braak_pvalue": 4.6004906003524586e-05,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "FTSJ3",
+      "cdr_beta": -1.5732116162771286,
+      "cdr_pvalue": 0.06981930513839886,
+      "cdr_qvalue": 0.2878225294665169,
+      "braak_beta": 3.234451533701625,
+      "braak_pvalue": 6.33276563826033e-05,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "SMG5",
+      "cdr_beta": -0.008146721910853305,
+      "cdr_pvalue": 0.9928138003433933,
+      "cdr_qvalue": 0.9979523926075013,
+      "braak_beta": 3.2715338686117907,
+      "braak_pvalue": 6.584451055490708e-05,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "SEPT8",
+      "cdr_beta": -0.19481549353152555,
+      "cdr_pvalue": 0.6402250537501757,
+      "cdr_qvalue": 0.8292265779404157,
+      "braak_beta": 1.498308145954469,
+      "braak_pvalue": 7.916093827464581e-05,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "E2F6",
+      "cdr_beta": -0.19004029298779557,
+      "cdr_pvalue": 0.8746370295975044,
+      "cdr_qvalue": 0.9517897369929437,
+      "braak_beta": 4.26843498672257,
+      "braak_pvalue": 0.0001044450150760965,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "RGS3",
+      "cdr_beta": -1.0692774415848003,
+      "cdr_pvalue": 0.4228479256904769,
+      "cdr_qvalue": 0.6805799115101862,
+      "braak_beta": 4.682353796576425,
+      "braak_pvalue": 0.00014297848841094378,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "KEAP1",
+      "cdr_beta": -1.276400113585637,
+      "cdr_pvalue": 0.019024719932486514,
+      "cdr_qvalue": 0.16572010087212016,
+      "braak_beta": 1.984382218228887,
+      "braak_pvalue": 0.00015508972267002413,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "ATF4",
+      "cdr_beta": -0.7505056328244109,
+      "cdr_pvalue": 0.06527939446871915,
+      "cdr_qvalue": 0.2809869234081694,
+      "braak_beta": 1.4520347967816067,
+      "braak_pvalue": 0.00016750178058223174,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "REPIN1",
+      "cdr_beta": -1.0055826257463354,
+      "cdr_pvalue": 0.03882388458806273,
+      "cdr_qvalue": 0.22515135684028473,
+      "braak_beta": 1.7459599478714856,
+      "braak_pvalue": 0.00017328414988589328,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "LSS",
+      "cdr_beta": -0.48683004463889246,
+      "cdr_pvalue": 0.5298875043019471,
+      "cdr_qvalue": 0.758900319212972,
+      "braak_beta": 2.6793936824386266,
+      "braak_pvalue": 0.00018501469323869326,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "ARPC2",
+      "cdr_beta": -0.21504528955884528,
+      "cdr_pvalue": 0.7563744536069189,
+      "cdr_qvalue": 0.8938236080607549,
+      "braak_beta": -2.3835495408379113,
+      "braak_pvalue": 0.00019540962125371675,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "FAM208A",
+      "cdr_beta": -0.12910533880111008,
+      "cdr_pvalue": 0.8753115996104588,
+      "cdr_qvalue": 0.9522538089853629,
+      "braak_beta": 2.816513757781658,
+      "braak_pvalue": 0.00021068474896394188,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "SIRT2",
+      "cdr_beta": -0.664264890831117,
+      "cdr_pvalue": 0.11997819376749731,
+      "cdr_qvalue": 0.36916581843337093,
+      "braak_beta": 1.4847917756309643,
+      "braak_pvalue": 0.00023419931385748583,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "RAD52",
+      "cdr_beta": -3.631377952903046,
+      "cdr_pvalue": 0.04663915475851924,
+      "cdr_qvalue": 0.24353549962071763,
+      "braak_beta": 6.40036827050153,
+      "braak_pvalue": 0.0002543145600971362,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "JAM3",
+      "cdr_beta": -0.5596559124840033,
+      "cdr_pvalue": 0.12143427123339257,
+      "cdr_qvalue": 0.3709258111048041,
+      "braak_beta": 1.249292820137427,
+      "braak_pvalue": 0.00025753595518016286,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "ODAM",
+      "cdr_beta": -0.2052170350810446,
+      "cdr_pvalue": 0.8501386472640664,
+      "cdr_qvalue": 0.9398100278799438,
+      "braak_beta": 3.6786534998763556,
+      "braak_pvalue": 0.00025793804944896286,
+      "braak_qvalue": 0.20084270356211303
+    },
+    {
+      "gene": "DFNB31",
+      "cdr_beta": -0.9376262587522974,
+      "cdr_pvalue": 0.09189799084457188,
+      "cdr_qvalue": 0.3261974971005277,
+      "braak_beta": 1.9224633523771084,
+      "braak_pvalue": 0.0002784497152616783,
+      "braak_qvalue": 0.20476882671771307
+    },
+    {
+      "gene": "TMC6",
+      "cdr_beta": -1.315034165998081,
+      "cdr_pvalue": 0.0942582516340335,
+      "cdr_qvalue": 0.32946830654335924,
+      "braak_beta": 2.7049069833502273,
+      "braak_pvalue": 0.0002976121818532497,
+      "braak_qvalue": 0.20513412359033384
+    },
+    {
+      "gene": "ELAC2",
+      "cdr_beta": -4.0618682550535565,
+      "cdr_pvalue": 0.0006462248881390514,
+      "cdr_qvalue": 0.08027132912020625,
+      "braak_beta": 4.413086172464939,
+      "braak_pvalue": 0.0003099405055380129,
+      "braak_qvalue": 0.20513412359033384
+    }
+  ]
+}

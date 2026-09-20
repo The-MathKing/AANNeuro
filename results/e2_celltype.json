@@ -1,0 +1,138 @@
+{
+  "analysis": "E2_Cell_Type_Composition_DonorLevel",
+  "marker_sets": {
+    "neuronal": [
+      "RBFOX3",
+      "SNAP25",
+      "SYP",
+      "NEFL",
+      "SLC17A7",
+      "GAD1",
+      "MAP2",
+      "CAMK2A"
+    ],
+    "astrocytic": [
+      "GFAP",
+      "ALDH1L1",
+      "AQP4",
+      "SLC1A2",
+      "SLC1A3"
+    ],
+    "microglial": [
+      "AIF1",
+      "CD68",
+      "CX3CR1",
+      "ITGAM",
+      "P2RY12",
+      "TMEM119"
+    ],
+    "oligodendrocytic": [
+      "MBP",
+      "MOG",
+      "OLIG2",
+      "SOX10",
+      "PLP1"
+    ],
+    "endothelial": [
+      "CLDN5",
+      "PECAM1",
+      "VWF",
+      "CD34",
+      "CDH5",
+      "FLT1"
+    ]
+  },
+  "marker_panel_note": "hand-curated 5-8 gene canonical marker panels; NOT the BRETIGEA marker resource",
+  "n_donors": 117,
+  "n_samples": 1052,
+  "donor_level_vs_braak": {
+    "neuronal": {
+      "spearman_rho": -0.28936677142512923,
+      "spearman_p": 0.001554251397692474,
+      "ci_lower": -0.4560166430394113,
+      "ci_upper": -0.11081482334761299,
+      "spearman_rho_uncentered": -0.30686415442804243,
+      "spearman_p_uncentered": 0.0007649417298967224,
+      "bh_q": 0.00777125698846237
+    },
+    "astrocytic": {
+      "spearman_rho": -0.12499065258799716,
+      "spearman_p": 0.17935715729293397,
+      "ci_lower": -0.30269727887477593,
+      "ci_upper": 0.05321431462454484,
+      "spearman_rho_uncentered": -0.0866942031389116,
+      "spearman_p_uncentered": 0.352669195309234,
+      "bh_q": 0.22419644661616744
+    },
+    "microglial": {
+      "spearman_rho": 0.13918250403174992,
+      "spearman_p": 0.13449225264266393,
+      "ci_lower": -0.04540006714915592,
+      "ci_upper": 0.31780333348998696,
+      "spearman_rho_uncentered": 0.12801142357046624,
+      "spearman_p_uncentered": 0.16899050941761226,
+      "bh_q": 0.22419644661616744
+    },
+    "oligodendrocytic": {
+      "spearman_rho": 0.06971246766676385,
+      "spearman_p": 0.45514270066272405,
+      "ci_lower": -0.1271810990198568,
+      "ci_upper": 0.2598678511783712,
+      "spearman_rho_uncentered": 0.09216237583456581,
+      "spearman_p_uncentered": 0.3230103708533572,
+      "bh_q": 0.45514270066272405
+    },
+    "endothelial": {
+      "spearman_rho": 0.12623744213999713,
+      "spearman_p": 0.17502327857655653,
+      "ci_lower": -0.04749579365367775,
+      "ci_upper": 0.29952918231393666,
+      "spearman_rho_uncentered": 0.13030490064760197,
+      "spearman_p_uncentered": 0.16142107297979585,
+      "bh_q": 0.22419644661616744
+    }
+  },
+  "sample_level_vs_braak_superseded": {
+    "neuronal": {
+      "spearman_rho": -0.1260511594985144,
+      "spearman_p": 4.133015385062609e-05,
+      "n": 1052
+    },
+    "astrocytic": {
+      "spearman_rho": -0.01632300861000714,
+      "spearman_p": 0.5969197474461209,
+      "n": 1052
+    },
+    "microglial": {
+      "spearman_rho": 0.08955115298476272,
+      "spearman_p": 0.0036498281330253684,
+      "n": 1052
+    },
+    "oligodendrocytic": {
+      "spearman_rho": 0.1494635737566544,
+      "spearman_p": 1.119395141077989e-06,
+      "n": 1052
+    },
+    "endothelial": {
+      "spearman_rho": 0.02134433269765802,
+      "spearman_p": 0.4892202512393062,
+      "n": 1052
+    }
+  },
+  "multivariable_model": {
+    "n_donors": 117,
+    "endothelial_beta": -0.20734241546736099,
+    "endothelial_p_value": 0.33444081353121835,
+    "endothelial_ci": [
+      -0.6312153163944343,
+      0.21653048545971237
+    ],
+    "neuronal_beta": -0.7853497579169761,
+    "neuronal_p_value": 0.002071531073736174,
+    "neuronal_ci": [
+      -1.2786267628454726,
+      -0.2920727529884797
+    ],
+    "r_squared": 0.16446606877944248
+  }
+}

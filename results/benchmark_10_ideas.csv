@@ -1,0 +1,13 @@
+Category,Idea,Internal_CV_AUC,Lockbox_AUC
+Baseline,Baseline (HVG 1000 + L2 Logistic),0.991,0.848
+Feature Selection,Supervised In-Fold Welch t-test (Top 200),0.976,0.718
+Feature Selection,Supervised In-Fold Welch t-test (Top 500),0.976,0.78
+Domain Knowledge,Curated Biological Prior Genes Only (~70 genes),0.974,0.853
+Domain Knowledge,Hybrid (500 HVG + Biological Priors),0.997,0.869
+Model Architecture,Sparse L1 Logistic (Lasso penalty C=0.2),0.937,0.671
+Normalization,RobustScaler (10-90 Quantiles) + L2 Logistic,0.989,0.843
+Normalization,Within-Sample Relative Rank Transformation,0.994,0.855
+Training Strategy,"Pooled Cortical Training (TC+EC+FC, N=300+)",0.991,0.867
+Model Architecture,Linear Support Vector Classifier (C=0.05),0.996,0.848
+Ensemble Methods,Feature-Subspace Bagging Ensemble (20 Sub-models),0.988,0.838
+Cross-Platform Transfer,Optimized Singscore (Top/Bottom 25 DE Genes),0.965,0.635

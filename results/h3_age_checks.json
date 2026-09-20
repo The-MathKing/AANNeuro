@@ -1,0 +1,138 @@
+{
+  "analysis": "H3_age_sex_robustness",
+  "model": {
+    "algorithm": "L2-regularised logistic regression (sklearn LogisticRegressionCV, Cs=5, inner 3-fold CV on AUC)",
+    "features": "top 1000 highest-variance genes in the training set, z-scored with training mean/SD",
+    "training_cohort": "GSE118553",
+    "training_regions": [
+      "Temporal_Cortex"
+    ],
+    "training_labels": "AD vs CTL (AsymAD excluded)",
+    "n_train_samples": 83,
+    "n_train_donors": 70,
+    "n_features": 1000,
+    "lockbox_feature_overlap": 891,
+    "lockbox_touched_for_training_or_tuning": false
+  },
+  "demographics_lockbox": {
+    "cohort": "GSE132903 lockbox (MTG)",
+    "n_AD": 97,
+    "n_CTL": 98,
+    "age_AD_mean": 85.02061855670104,
+    "age_AD_sd": 6.749968181164663,
+    "age_CTL_mean": 84.9795918367347,
+    "age_CTL_sd": 6.898348213819591,
+    "age_AD_min": 70.0,
+    "age_AD_max": 98.0,
+    "age_CTL_min": 70.0,
+    "age_CTL_max": 102.0,
+    "age_diff_welch_p": 0.9665614751296745,
+    "female_AD": 48,
+    "female_CTL": 48,
+    "sex_chi2_p": 1.0,
+    "age_missing": 0
+  },
+  "demographics_training": {
+    "cohort": "GSE118553 Temporal Cortex (training)",
+    "n_AD": 52,
+    "n_CTL": 31,
+    "age_AD_mean": 82.42307692307692,
+    "age_AD_sd": 10.734489318786585,
+    "age_CTL_mean": 69.23333333333333,
+    "age_CTL_sd": 16.843464573851033,
+    "age_AD_min": 63.0,
+    "age_AD_max": 105.0,
+    "age_CTL_min": 40.0,
+    "age_CTL_max": 95.0,
+    "age_diff_welch_p": 0.0003765140368196648,
+    "female_AD": 29,
+    "female_CTL": 12,
+    "sex_chi2_p": 0.20166874931846981,
+    "age_missing": 1,
+    "n_donors": 70
+  },
+  "lockbox_calibration": {
+    "median_predicted_prob": 5.181117643849296e-08,
+    "max_predicted_prob": 0.27331301577713224,
+    "frac_predicted_AD_at_0.5": 0.0,
+    "sensitivity_at_0.5": 0.0,
+    "specificity_at_0.5": 1.0
+  },
+  "lockbox_main": {
+    "auc": 0.8547233326320218,
+    "ci_lower": 0.8015662988472655,
+    "ci_upper": 0.9071518410730304,
+    "perm_p": 0.0001999600079984003,
+    "n_perm_ge_observed": 0,
+    "n_perm": 5000,
+    "min_attainable_p": 0.0001999600079984003
+  },
+  "age_only_auc": {
+    "auc": 0.5055754260467074,
+    "ci_lower": 0.42387667998832956,
+    "ci_upper": 0.5894288497998735
+  },
+  "age_sex_transfer_auc": {
+    "auc": 0.5065747948664002,
+    "ci_lower": 0.42397923186730757,
+    "ci_upper": 0.5887989783589223
+  },
+  "age_sex_within_lockbox_cv_auc": {
+    "auc": 0.37018725015779513,
+    "ci_lower": 0.293050865344027,
+    "ci_upper": 0.45178374613003086
+  },
+  "age_sex_residualised_model_auc": {
+    "auc": 0.7771933515674311,
+    "ci_lower": 0.7122314093111439,
+    "ci_upper": 0.8398604797979797
+  },
+  "score_logistic_adjusted": {
+    "or_per_sd": 6.250825180092779,
+    "or_ci_lower": 3.7400921404024436,
+    "or_ci_upper": 10.447019475802962,
+    "lr_test_p": 2.764816286752505e-20,
+    "auc_age_sex": 0.5043656637912897,
+    "auc_age_sex_plus_score": 0.8598779718072795
+  },
+  "score_residualised_on_age_sex_auc": {
+    "auc": 0.8597727750894173,
+    "ci_lower": 0.806707702020202,
+    "ci_upper": 0.9114212839367694
+  },
+  "age_matched_subset": {
+    "n_pairs": 97,
+    "auc": 0.8552449782123499,
+    "ci_lower": 0.7988289643682851,
+    "ci_upper": 0.9072699812068716,
+    "age_AD_mean": 85.02061855670104,
+    "age_CTL_mean": 85.0618556701031,
+    "age_diff_welch_p": 0.9664465937104328
+  },
+  "age_tertile_auc": {
+    "youngest_tertile": {
+      "n": 69,
+      "auc": 0.8647058823529411,
+      "age_range": [
+        70.0,
+        82.0
+      ]
+    },
+    "middle_tertile": {
+      "n": 64,
+      "auc": 0.8758553274682307,
+      "age_range": [
+        83.0,
+        88.0
+      ]
+    },
+    "oldest_tertile": {
+      "n": 62,
+      "auc": 0.83125,
+      "age_range": [
+        89.0,
+        102.0
+      ]
+    }
+  }
+}

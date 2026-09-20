@@ -1,0 +1,102 @@
+{
+  "n_asymAD": 32,
+  "n_AD": 52,
+  "n_perm": 5000,
+  "specs": {
+    "primary_93_cortical_donors": {
+      "n_donors": 93,
+      "sets": {
+        "p<0.01": {
+          "label": "primary_93_cortical_donors:p<0.01",
+          "n_genes_neg_cdr": 717,
+          "n_genes_pos_cdr": 262,
+          "mean_t_asymAD_vs_AD_in_negCDR_set": 1.1874776725201752,
+          "mean_t_asymAD_vs_AD_in_posCDR_set": -1.3419325840441227,
+          "statistic_S": 2.529410256564298,
+          "null_mean": 0.0045206574585685754,
+          "null_sd": 0.6989050574580695,
+          "perm_p_one_sided": 0.0003999200159968006,
+          "n_overlap_significant_in_118553": 510,
+          "frac_sign_concordant_among_significant": 0.7725490196078432
+        },
+        "p<0.05": {
+          "label": "primary_93_cortical_donors:p<0.05",
+          "n_genes_neg_cdr": 1636,
+          "n_genes_pos_cdr": 823,
+          "mean_t_asymAD_vs_AD_in_negCDR_set": 0.8558006565571633,
+          "mean_t_asymAD_vs_AD_in_posCDR_set": -1.2666064417922525,
+          "statistic_S": 2.1224070983494157,
+          "null_mean": -0.011350104414183193,
+          "null_sd": 0.5735583255046646,
+          "perm_p_one_sided": 0.0001999600079984003,
+          "n_overlap_significant_in_118553": 1261,
+          "frac_sign_concordant_among_significant": 0.7264076130055511
+        },
+        "top300": {
+          "label": "primary_93_cortical_donors:top300",
+          "n_genes_neg_cdr": 225,
+          "n_genes_pos_cdr": 75,
+          "mean_t_asymAD_vs_AD_in_negCDR_set": 1.354140853944599,
+          "mean_t_asymAD_vs_AD_in_posCDR_set": -1.50869935998875,
+          "statistic_S": 2.8628402139333486,
+          "null_mean": 0.00412402896131886,
+          "null_sd": 0.7589778622563018,
+          "perm_p_one_sided": 0.0001999600079984003,
+          "n_overlap_significant_in_118553": 150,
+          "frac_sign_concordant_among_significant": 0.84
+        }
+      }
+    },
+    "all_117_donors_region_centred": {
+      "n_donors": 117,
+      "sets": {
+        "p<0.01": {
+          "label": "all_117_donors_region_centred:p<0.01",
+          "n_genes_neg_cdr": 793,
+          "n_genes_pos_cdr": 868,
+          "mean_t_asymAD_vs_AD_in_negCDR_set": 1.2547693427553128,
+          "mean_t_asymAD_vs_AD_in_posCDR_set": -1.1895741937182385,
+          "statistic_S": 2.4443435364735513,
+          "null_mean": 0.011959690004969797,
+          "null_sd": 0.5737214721438835,
+          "perm_p_one_sided": 0.0001999600079984003,
+          "n_overlap_significant_in_118553": 862,
+          "frac_sign_concordant_among_significant": 0.7749419953596288
+        },
+        "p<0.05": {
+          "label": "all_117_donors_region_centred:p<0.05",
+          "n_genes_neg_cdr": 1800,
+          "n_genes_pos_cdr": 2065,
+          "mean_t_asymAD_vs_AD_in_negCDR_set": 0.9089421381237897,
+          "mean_t_asymAD_vs_AD_in_posCDR_set": -1.1171692199475676,
+          "statistic_S": 2.0261113580713572,
+          "null_mean": 0.0036126952668295246,
+          "null_sd": 0.5130772609167449,
+          "perm_p_one_sided": 0.0001999600079984003,
+          "n_overlap_significant_in_118553": 2000,
+          "frac_sign_concordant_among_significant": 0.7325
+        },
+        "top300": {
+          "label": "all_117_donors_region_centred:top300",
+          "n_genes_neg_cdr": 129,
+          "n_genes_pos_cdr": 171,
+          "mean_t_asymAD_vs_AD_in_negCDR_set": 1.3925291539769475,
+          "mean_t_asymAD_vs_AD_in_posCDR_set": -1.4089969695811635,
+          "statistic_S": 2.8015261235581113,
+          "null_mean": 0.008240021220215367,
+          "null_sd": 0.6235829256727032,
+          "perm_p_one_sided": 0.0001999600079984003,
+          "n_overlap_significant_in_118553": 157,
+          "frac_sign_concordant_among_significant": 0.7898089171974523
+        }
+      }
+    }
+  },
+  "fisher_top100_asymAD_up_vs_negCDR_p01": {
+    "overlap": 14,
+    "expected_by_chance": 5.87512291052114,
+    "n_negCDR": 717,
+    "odds_ratio": 2.6400807171921,
+    "p": 0.0020602069617127188
+  }
+}

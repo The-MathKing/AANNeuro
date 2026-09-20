@@ -1,0 +1,9 @@
+id,name,data_mode,n_train_samples,n_train_donors,n_features,cv_auc,lockbox_auc,lockbox_ci_lower,lockbox_ci_upper,permutation_p,residualized_lockbox_auc
+baseline_h3,"Baseline H3 (TC, 1000 HVG, Z-score)",single_tc,83,70,1000,0.9913,0.8483,0.7939,0.9009,0.001,0.8483
+biological_priors_only,Curated Biological Priors Only (~70 genes),single_tc,83,70,80,0.9777,0.8514,0.7975,0.8997,0.001,0.8514
+hybrid_priors,"Hybrid Priors (TC, 500 HVG + Biological Priors)",single_tc,83,70,575,0.9969,0.8681,0.8172,0.914,0.001,0.8681
+rank_transform_only,"Rank Transform Only (TC, 1000 HVG, Within-Sample Rank)",single_tc,83,70,1000,0.9938,0.8706,0.8204,0.9176,0.001,0.8706
+multi_region_pooled,"Multi-Region Cortical Pooled (TC+EC+FC, 1000 HVG)",multi_cortical,207,78,1000,0.9908,0.8672,0.8138,0.9166,0.001,0.8672
+composite_a_pooled_hybrid,Composite Model A (Pooled Cortical + Hybrid Priors),multi_cortical,207,78,571,0.9869,0.8581,0.8052,0.9069,0.001,0.8581
+composite_b_pooled_rank,Composite Model B (Pooled Cortical + Rank Transform),multi_cortical,207,78,1000,0.987,0.8479,0.7882,0.9026,0.001,0.8479
+composite_c_full_synergy,Composite Model C (Pooled + Hybrid Priors + Rank Transform),multi_cortical,207,78,571,0.9812,0.8424,0.7844,0.893,0.001,0.8424

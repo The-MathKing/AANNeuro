@@ -1,0 +1,188 @@
+{
+  "analysis": "E5_Biological_Anchoring",
+  "gene_list_definition": {
+    "contrast": "continuous Braak stage (0-VI); Spearman correlation of each gene with Braak across all MSBB samples with valid Braak (pooled over 19 regions, no covariate adjustment)",
+    "n_samples_ranked": 1052,
+    "disease_up": "300 genes with the largest positive Spearman rho",
+    "disease_down": "300 genes with the most negative Spearman rho",
+    "threshold": "fixed list length (top/bottom 300 = 2.3% of the background each); no p-value threshold",
+    "background": "all 13237 genes measured in the harmonised MSBB matrix",
+    "test": "one-sided Fisher exact test, unadjusted p and Bonferroni over 9 tests",
+    "gene_panels": "hand-curated 11-15-gene lists per functional category, labelled after the AMP-AD consensus modules; they are NOT the modules' memberships"
+  },
+  "n_tests_bonferroni": 9,
+  "sensitivity_donor_level_ranking": {
+    "upregulated_module_enrichment": {
+      "Immune_Microglial": {
+        "module_size_in_bg": 14,
+        "overlap_count": 1,
+        "overlap_genes": [
+          "TYROBP"
+        ],
+        "odds_ratio": 3.324929251350656,
+        "p_value": 0.2746512821740906
+      },
+      "Neuronal_Synaptic": {
+        "module_size_in_bg": 15,
+        "overlap_count": 0,
+        "overlap_genes": [],
+        "odds_ratio": 0.0,
+        "p_value": 1.0
+      },
+      "ECM_Endothelial_Vascular": {
+        "module_size_in_bg": 15,
+        "overlap_count": 3,
+        "overlap_genes": [
+          "BGN",
+          "COL1A2",
+          "SPARC"
+        ],
+        "odds_ratio": 10.87962962962963,
+        "p_value": 0.004283735494303633
+      },
+      "Mitochondrial_Metabolic": {
+        "module_size_in_bg": 11,
+        "overlap_count": 0,
+        "overlap_genes": [],
+        "odds_ratio": 0.0,
+        "p_value": 1.0
+      }
+    },
+    "downregulated_module_enrichment": {
+      "Immune_Microglial": {
+        "module_size_in_bg": 14,
+        "overlap_count": 0,
+        "overlap_genes": [],
+        "odds_ratio": 0.0,
+        "p_value": 1.0
+      },
+      "Neuronal_Synaptic": {
+        "module_size_in_bg": 15,
+        "overlap_count": 7,
+        "overlap_genes": [
+          "BSN",
+          "NEFL",
+          "PCLO",
+          "SNAP25",
+          "SYN1",
+          "SYP",
+          "VAMP2"
+        ],
+        "odds_ratio": 38.61049488054608,
+        "p_value": 1.5776428564486194e-08
+      },
+      "ECM_Endothelial_Vascular": {
+        "module_size_in_bg": 15,
+        "overlap_count": 0,
+        "overlap_genes": [],
+        "odds_ratio": 0.0,
+        "p_value": 1.0
+      },
+      "Mitochondrial_Metabolic": {
+        "module_size_in_bg": 11,
+        "overlap_count": 0,
+        "overlap_genes": [],
+        "odds_ratio": 0.0,
+        "p_value": 1.0
+      }
+    }
+  },
+  "n_background_genes": 13237,
+  "upregulated_module_enrichment": {
+    "Immune_Microglial": {
+      "module_size_in_bg": 14,
+      "overlap_count": 1,
+      "overlap_genes": [
+        "TYROBP"
+      ],
+      "odds_ratio": 3.324929251350656,
+      "p_value": 0.2746512821740906,
+      "bonferroni_p": 1.0
+    },
+    "Neuronal_Synaptic": {
+      "module_size_in_bg": 15,
+      "overlap_count": 0,
+      "overlap_genes": [],
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "bonferroni_p": 1.0
+    },
+    "ECM_Endothelial_Vascular": {
+      "module_size_in_bg": 15,
+      "overlap_count": 3,
+      "overlap_genes": [
+        "BGN",
+        "COL1A2",
+        "COL3A1"
+      ],
+      "odds_ratio": 10.87962962962963,
+      "p_value": 0.004283735494303633,
+      "bonferroni_p": 0.0385536194487327
+    },
+    "Mitochondrial_Metabolic": {
+      "module_size_in_bg": 11,
+      "overlap_count": 0,
+      "overlap_genes": [],
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "bonferroni_p": 1.0
+    }
+  },
+  "downregulated_module_enrichment": {
+    "Immune_Microglial": {
+      "module_size_in_bg": 14,
+      "overlap_count": 0,
+      "overlap_genes": [],
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "bonferroni_p": 1.0
+    },
+    "Neuronal_Synaptic": {
+      "module_size_in_bg": 15,
+      "overlap_count": 5,
+      "overlap_genes": [
+        "BSN",
+        "NEFL",
+        "PCLO",
+        "SNAP25",
+        "SYN1"
+      ],
+      "odds_ratio": 21.910169491525423,
+      "p_value": 1.4412048078906947e-05,
+      "bonferroni_p": 0.0001297084327101625
+    },
+    "ECM_Endothelial_Vascular": {
+      "module_size_in_bg": 15,
+      "overlap_count": 0,
+      "overlap_genes": [],
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "bonferroni_p": 1.0
+    },
+    "Mitochondrial_Metabolic": {
+      "module_size_in_bg": 11,
+      "overlap_count": 1,
+      "overlap_genes": [
+        "NDUFS1"
+      ],
+      "odds_ratio": 4.323411371237458,
+      "p_value": 0.22296204163514574,
+      "bonferroni_p": 1.0
+    }
+  },
+  "gwas_risk_loci_enrichment": {
+    "AD_GWAS_Risk_Loci": {
+      "module_size_in_bg": 34,
+      "overlap_count": 4,
+      "overlap_genes": [
+        "GRN",
+        "INPP5D",
+        "MEF2C",
+        "PTK2B"
+      ],
+      "odds_ratio": 2.8203579418344518,
+      "p_value": 0.0662054822542144,
+      "bonferroni_p": 0.5958493402879296
+    }
+  }
+}

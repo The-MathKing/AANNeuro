@@ -1,0 +1,19 @@
+{
+  "analysis": "E9_Age_Matched_Sensitivity",
+  "cerebellum_model": "GSE118553 Cerebellum, CTL vs AD, 5-fold donor-grouped CV, top-500 in-fold HVG, L2 logistic (CV C); raw vs in-fold age-residualised",
+  "cerebellum_n_samples": 60,
+  "cerebellum_n_donors": 54,
+  "cerebellum_age_AD_mean": 82.47368421052632,
+  "cerebellum_age_CTL_mean": 70.95454545454545,
+  "cerebellum_age_diff_p": 0.0032213174927467766,
+  "temporal_cortex_age_ge65_n_samples": 71,
+  "temporal_cortex_age_ge65_n_donors": 62,
+  "msbb_stg_full_sample_braak_rho": 0.311522799935676,
+  "msbb_stg_older_n_samples": 56,
+  "temporal_cortex_age_ge65_auc": 0.9857142857142858,
+  "cerebellum_raw_auc": 0.9605263157894737,
+  "cerebellum_age_residualized_auc": 0.6614832535885167,
+  "msbb_stg_older_braak_rho": 0.05946667898515439,
+  "msbb_older_p": 0.6633035796759502,
+  "conclusion": "Mixed: GSE118553 temporal-cortex AD-vs-CTL AUC survives restriction to age>=65; the cerebellar AUC does not survive age residualisation; the MSBB STG Braak-progression rho in age>=65 donors is not distinguishable from zero."
+}

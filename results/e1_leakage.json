@@ -1,0 +1,16 @@
+{
+  "analysis": "E1_Leakage_Taxonomy",
+  "design_note": "All arms use the same classifier (L2 logistic, C=1) on 500 top-variance genes; only the leakage mode differs. Pooled four GSE118553 regions, AD vs CTL. Draft 8 compared leaky arms (C=1) with a CV-tuned reference, which confounded classifier with leakage.",
+  "n_samples": 267,
+  "n_donors": 79,
+  "gold_standard_zero_leakage_auc": 0.9739520958083833,
+  "tuned_classifier_zero_leakage_auc": 0.9769461077844311,
+  "donor_leakage_auc": 0.9883832335329341,
+  "donor_leakage_inflation": 0.014431137724550847,
+  "feature_selection_leakage_auc": 0.9765868263473054,
+  "feature_selection_inflation": 0.0026347305389221587,
+  "normalization_leakage_auc": 0.9731736526946108,
+  "normalization_inflation": -0.000778443113772509,
+  "compound_leakage_auc": 0.9884431137724552,
+  "compound_inflation": 0.014491017964071928
+}

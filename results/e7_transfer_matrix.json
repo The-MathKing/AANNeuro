@@ -1,0 +1,106 @@
+{
+  "analysis": "E7_Cross_Region_Transfer_Matrix",
+  "regions": [
+    "BM36_PHG",
+    "BM22_STG",
+    "BM20_ITG",
+    "BM9_DLPFC",
+    "BM10_FP",
+    "BM7_SPL",
+    "Occipital_Visual_Cortex",
+    "Precentral_Gyrus"
+  ],
+  "n_splits": 20,
+  "n_donors": 101,
+  "transfer_matrix": {
+    "BM36_PHG": {
+      "BM36_PHG": 0.6019943224894502,
+      "BM22_STG": 0.5729523613040488,
+      "BM20_ITG": 0.5558042557005134,
+      "BM9_DLPFC": 0.5642189154044654,
+      "BM10_FP": 0.6051737623172778,
+      "BM7_SPL": 0.5636018462771508,
+      "Occipital_Visual_Cortex": 0.5305568335864074,
+      "Precentral_Gyrus": 0.51632730281729
+    },
+    "BM22_STG": {
+      "BM36_PHG": 0.611570310265838,
+      "BM22_STG": 0.5991361944304666,
+      "BM20_ITG": 0.5376516930975364,
+      "BM9_DLPFC": 0.5668429577975148,
+      "BM10_FP": 0.5760916782776581,
+      "BM7_SPL": 0.5705714256542234,
+      "Occipital_Visual_Cortex": 0.5474668041797126,
+      "Precentral_Gyrus": 0.5772222482931484
+    },
+    "BM20_ITG": {
+      "BM36_PHG": 0.5776499806203245,
+      "BM22_STG": 0.5419842283559991,
+      "BM20_ITG": 0.5225189384547464,
+      "BM9_DLPFC": 0.5097342453663611,
+      "BM10_FP": 0.6018686287081055,
+      "BM7_SPL": 0.5126839021158917,
+      "Occipital_Visual_Cortex": 0.5697438401787043,
+      "Precentral_Gyrus": 0.5513964945268597
+    },
+    "BM9_DLPFC": {
+      "BM36_PHG": 0.5696059412830892,
+      "BM22_STG": 0.5758112333644454,
+      "BM20_ITG": 0.511910675323988,
+      "BM9_DLPFC": 0.4757438342316438,
+      "BM10_FP": 0.5306409042346542,
+      "BM7_SPL": 0.5069918197593313,
+      "Occipital_Visual_Cortex": 0.4475217396695726,
+      "Precentral_Gyrus": 0.5107630777948116
+    },
+    "BM10_FP": {
+      "BM36_PHG": 0.6037665082114376,
+      "BM22_STG": 0.5682502772464689,
+      "BM20_ITG": 0.5637732214657151,
+      "BM9_DLPFC": 0.5187025616141592,
+      "BM10_FP": 0.58464797618608,
+      "BM7_SPL": 0.5790765165276739,
+      "Occipital_Visual_Cortex": 0.569202634620338,
+      "Precentral_Gyrus": 0.5847259545114575
+    },
+    "BM7_SPL": {
+      "BM36_PHG": 0.5867100787873889,
+      "BM22_STG": 0.5471164729131731,
+      "BM20_ITG": 0.46289456198107803,
+      "BM9_DLPFC": 0.49629377167793304,
+      "BM10_FP": 0.5623096378088935,
+      "BM7_SPL": 0.5069070077553496,
+      "Occipital_Visual_Cortex": 0.5563747356108781,
+      "Precentral_Gyrus": 0.49232542792411954
+    },
+    "Occipital_Visual_Cortex": {
+      "BM36_PHG": 0.5149131202603817,
+      "BM22_STG": 0.531690346228195,
+      "BM20_ITG": 0.4939319697736694,
+      "BM9_DLPFC": 0.4726993272747656,
+      "BM10_FP": 0.5214770877706868,
+      "BM7_SPL": 0.5105571254498951,
+      "Occipital_Visual_Cortex": 0.49702394921569126,
+      "Precentral_Gyrus": 0.4907788379955611
+    },
+    "Precentral_Gyrus": {
+      "BM36_PHG": 0.5500289272202973,
+      "BM22_STG": 0.5519620991466966,
+      "BM20_ITG": 0.5059290542869297,
+      "BM9_DLPFC": 0.5066807893080145,
+      "BM10_FP": 0.5375334663974368,
+      "BM7_SPL": 0.47735916264534684,
+      "Occipital_Visual_Cortex": 0.49921650573440435,
+      "Precentral_Gyrus": 0.4474993884612693
+    }
+  },
+  "mean_within_region_auc": 0.5294339514030871,
+  "mean_cross_region_auc": 0.54054713011907,
+  "within_auc_sd_over_splits": 0.043247456853724636,
+  "cross_auc_sd_over_splits": 0.029851636363747925,
+  "diff_within_minus_cross_mean": -0.011113178715982833,
+  "diff_pct2_5": -0.06850620991220455,
+  "diff_pct97_5": 0.02406724522633623,
+  "n_nan_cells": 0,
+  "interpretation": "No difference detected between within- and cross-region AUC; both are weak (near 0.55-0.6). Repeated splits share donors, so the interval is descriptive, not a formal test."
+}

@@ -1,0 +1,27 @@
+{
+  "hypothesis": "H3_External_Replication",
+  "discovery_cohort": "GSE118553_Temporal_Cortex",
+  "internal_cv_auc": 0.9931761786600496,
+  "internal_cv_ci": [
+    0.9772579989426463,
+    1.0
+  ],
+  "lockbox_replication_gse132903": {
+    "cohort": "GSE132903_MTG",
+    "platform": "Illumina_HumanHT-12_V4.0",
+    "n_samples": 195,
+    "external_auc": 0.8547233326320218,
+    "ci_lower": 0.8015662988472655,
+    "ci_upper": 0.9071518410730304,
+    "replicated": true
+  },
+  "cross_platform_replication_msbb": {
+    "cohort": "MSBB_GSE84422_Temporal",
+    "platform": "Affymetrix_HG-U133A",
+    "n_samples": 176,
+    "external_auc": 0.5963721779981731,
+    "ci_lower": 0.46814202931239846,
+    "ci_upper": 0.7158582792533966,
+    "replicated": false
+  }
+}

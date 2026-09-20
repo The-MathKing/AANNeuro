@@ -1,0 +1,16 @@
+{
+  "analysis": "E10_cVAE_vs_Residualized_PCA",
+  "region": "Temporal_Cortex",
+  "n_samples": 82,
+  "n_donors": 69,
+  "draft8_pooled_four_region_results": {
+    "pca_auc": 0.669,
+    "cvae_auc": 0.616,
+    "note": "pooled regions; latent dims dominated by region; superseded"
+  },
+  "residualized_pca_mean_auc": 0.9055631868131868,
+  "residualized_pca_age_leakage_corr": 0.24609932246307542,
+  "cvae_mean_auc": 0.9354395604395604,
+  "cvae_age_leakage_corr": 0.29909738071242375,
+  "recommendation": "Residualized linear modeling achieves comparable/superior orthogonalization with higher deterministic reproducibility; cVAE provides non-linear representation but requires substantially higher sample scale."
+}

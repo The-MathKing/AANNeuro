@@ -1,0 +1,171 @@
+{
+  "hypothesis": "H2_Cognitive_Resilience",
+  "status": "EXPLORATORY_POWER_GATE",
+  "n_resilient_donors": 7,
+  "n_demented_donors": 53,
+  "age_resilient_mean": 89.85714285714286,
+  "age_resilient_std": 6.09449400220044,
+  "age_demented_mean": 87.15094339622641,
+  "age_demented_std": 8.678878486601592,
+  "age_matching_p": 0.32242764006935837,
+  "braak_resilient_mean": 4.857142857142857,
+  "braak_resilient_std": 1.0690449676496976,
+  "braak_demented_mean": 5.490566037735849,
+  "braak_demented_std": 0.7995826197132228,
+  "braak_matching_p": 0.17462364757945567,
+  "braak_matching_p_mannwhitney": 0.10137801101777057,
+  "braak_resilient_min": 4.0,
+  "braak_resilient_max": 6.0,
+  "female_resilient": 5,
+  "male_resilient": 2,
+  "female_demented": 41,
+  "male_demented": 12,
+  "resilient_donor_table": [
+    {
+      "donor_id": "375",
+      "braak": 6.0,
+      "cdr": 0.5,
+      "age": 87.0,
+      "sex": "FEMALE",
+      "n_samples": 19
+    },
+    {
+      "donor_id": "480",
+      "braak": 4.0,
+      "cdr": 0.5,
+      "age": 91.0,
+      "sex": "FEMALE",
+      "n_samples": 18
+    },
+    {
+      "donor_id": "571",
+      "braak": 4.0,
+      "cdr": 0.5,
+      "age": 89.0,
+      "sex": "FEMALE",
+      "n_samples": 16
+    },
+    {
+      "donor_id": "589",
+      "braak": 4.0,
+      "cdr": 0.5,
+      "age": 90.0,
+      "sex": "FEMALE",
+      "n_samples": 2
+    },
+    {
+      "donor_id": "625",
+      "braak": 6.0,
+      "cdr": 0.0,
+      "age": 102.0,
+      "sex": "FEMALE",
+      "n_samples": 16
+    },
+    {
+      "donor_id": "804",
+      "braak": 4.0,
+      "cdr": 0.0,
+      "age": 82.0,
+      "sex": "MALE",
+      "n_samples": 6
+    },
+    {
+      "donor_id": "941",
+      "braak": 6.0,
+      "cdr": 0.5,
+      "age": 88.0,
+      "sex": "MALE",
+      "n_samples": 16
+    }
+  ],
+  "regional_classification_results": {
+    "BM9_DLPFC": {
+      "region": "BM9_DLPFC",
+      "n_samples": 24,
+      "n_resilient": 5,
+      "n_demented": 19,
+      "auc": 0.2631578947368421,
+      "ci_lower": 0.0504201680672269,
+      "ci_upper": 0.5238095238095238
+    },
+    "BM10_FP": {
+      "region": "BM10_FP",
+      "n_samples": 30,
+      "n_resilient": 5,
+      "n_demented": 25,
+      "auc": 0.6719999999999999,
+      "ci_lower": 0.40384615384615385,
+      "ci_upper": 0.9115384615384614
+    },
+    "BM22_STG": {
+      "region": "BM22_STG",
+      "n_samples": 27,
+      "n_resilient": 6,
+      "n_demented": 21,
+      "auc": 0.6428571428571428,
+      "ci_lower": 0.3489993098688751,
+      "ci_upper": 0.8909683794466403
+    },
+    "BM20_ITG": {
+      "region": "BM20_ITG",
+      "n_samples": 24,
+      "n_resilient": 4,
+      "n_demented": 20,
+      "auc": 0.5375,
+      "ci_lower": 0.17391304347826086,
+      "ci_upper": 1.0
+    },
+    "BM36_PHG": {
+      "region": "BM36_PHG",
+      "n_samples": 22,
+      "n_resilient": 4,
+      "n_demented": 18,
+      "auc": 0.2777777777777778,
+      "ci_lower": 0.05555555555555558,
+      "ci_upper": 0.543859649122807
+    },
+    "BM38_TP": {
+      "region": "BM38_TP",
+      "n_samples": 28,
+      "n_resilient": 4,
+      "n_demented": 24,
+      "auc": 0.7604166666666666,
+      "ci_lower": 0.34615384615384615,
+      "ci_upper": 1.0
+    },
+    "Anterior_Cingulate": {
+      "region": "Anterior_Cingulate",
+      "n_samples": 26,
+      "n_resilient": 5,
+      "n_demented": 21,
+      "auc": 0.5619047619047619,
+      "ci_lower": 0.3068181818181819,
+      "ci_upper": 0.8260869565217391
+    }
+  },
+  "cross_cohort_transfer": {
+    "signature_source": "GSE118553_Temporal_Cortex_AsymAD_vs_AD",
+    "target_cohort": "MSBB_GSE84422_High_Pathology",
+    "transfer_auc": 0.6122209486381747,
+    "ci_lower": 0.4959315223861243,
+    "ci_upper": 0.7082302107710806
+  },
+  "continuous_donor_resilience": {
+    "n_total_donors": 117,
+    "top_resilience_genes_head": [
+      "ZC3H3",
+      "RHOT2",
+      "FRMD1",
+      "BCAS3",
+      "HBEGF",
+      "PGS1",
+      "SLC7A6",
+      "NVL",
+      "MOGS",
+      "TFB1M"
+    ],
+    "asymad_overlap_count": 0,
+    "asymad_overlap_odds_ratio": 0.0,
+    "asymad_overlap_p_value": 1.0
+  }
+}

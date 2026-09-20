@@ -1,0 +1,91 @@
+{
+  "analysis": "E8_Sparse_Signature_Panel",
+  "panel_size": 20,
+  "selected_genes": [
+    {
+      "gene": "FAM231B",
+      "selection_probability": 1.0
+    },
+    {
+      "gene": "DEFA1",
+      "selection_probability": 1.0
+    },
+    {
+      "gene": "ALDH1A1",
+      "selection_probability": 1.0
+    },
+    {
+      "gene": "HIGD1B",
+      "selection_probability": 0.99
+    },
+    {
+      "gene": "ISG15",
+      "selection_probability": 0.99
+    },
+    {
+      "gene": "RPH3A",
+      "selection_probability": 0.99
+    },
+    {
+      "gene": "GSTT1",
+      "selection_probability": 0.98
+    },
+    {
+      "gene": "DUSP1",
+      "selection_probability": 0.98
+    },
+    {
+      "gene": "CITED2",
+      "selection_probability": 0.98
+    },
+    {
+      "gene": "GLYATL1",
+      "selection_probability": 0.98
+    },
+    {
+      "gene": "KDM5D",
+      "selection_probability": 0.98
+    },
+    {
+      "gene": "RGS7",
+      "selection_probability": 0.97
+    },
+    {
+      "gene": "HSPA12B",
+      "selection_probability": 0.97
+    },
+    {
+      "gene": "LOC101927762",
+      "selection_probability": 0.96
+    },
+    {
+      "gene": "CORO6",
+      "selection_probability": 0.96
+    },
+    {
+      "gene": "FPR3",
+      "selection_probability": 0.95
+    },
+    {
+      "gene": "COLEC12",
+      "selection_probability": 0.95
+    },
+    {
+      "gene": "IPO8",
+      "selection_probability": 0.94
+    },
+    {
+      "gene": "HEYL",
+      "selection_probability": 0.92
+    },
+    {
+      "gene": "TMSB4Y",
+      "selection_probability": 0.91
+    }
+  ],
+  "internal_cv_auc": 0.9869727047146402,
+  "external_lockbox_auc": 0.7927624658110667,
+  "external_ci_lower": 0.7304159976962608,
+  "external_ci_upper": 0.8537707400685621,
+  "replicated": true
+}

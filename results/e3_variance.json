@@ -1,0 +1,36 @@
+{
+  "analysis": "E3_Variance_Partitioning",
+  "cohort": "GSE118553",
+  "donor_variance": 0.0011561200114391904,
+  "residual_variance": 0.0008255879050147731,
+  "total_variance": 0.0019817079164539636,
+  "intraclass_correlation_donor_share": 0.5833957677819308,
+  "n_samples": 267,
+  "n_donors": 79,
+  "fixed_effects": {
+    "Intercept": 0.37667327652779997,
+    "C(region)[T.Entorhinal_Cortex]": 0.17295583797852332,
+    "C(region)[T.Frontal_Cortex]": 0.1326127498471184,
+    "C(region)[T.Temporal_Cortex]": 0.1584212405756026,
+    "is_ad": 0.000962447169355345,
+    "is_ad:C(region)[T.Entorhinal_Cortex]": 0.016246721419202356,
+    "is_ad:C(region)[T.Frontal_Cortex]": 0.006791212252511166,
+    "is_ad:C(region)[T.Temporal_Cortex]": -0.0031416425258771253,
+    "age": -0.0001572556276431184,
+    "is_female": -0.0038181970918905778,
+    "Group Var": 1.4003596763187836
+  },
+  "fixed_pvalues": {
+    "Intercept": 1.560507861296052e-45,
+    "C(region)[T.Entorhinal_Cortex]": 2.7633729165240296e-82,
+    "C(region)[T.Frontal_Cortex]": 4.972261265363373e-48,
+    "C(region)[T.Temporal_Cortex]": 2.08003702153473e-79,
+    "is_ad": 0.9378535122729348,
+    "is_ad:C(region)[T.Entorhinal_Cortex]": 0.15582198684281184,
+    "is_ad:C(region)[T.Frontal_Cortex]": 0.5511794497679632,
+    "is_ad:C(region)[T.Temporal_Cortex]": 0.7652990502725975,
+    "age": 0.6559492619240178,
+    "is_female": 0.6641655460409286,
+    "Group Var": 8.61631090259643e-05
+  }
+}
