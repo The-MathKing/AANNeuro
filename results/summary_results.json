@@ -1,0 +1,794 @@
+{
+  "cohort": {
+    "n_donors_total": 112,
+    "n_donors_train": 89,
+    "n_donors_test": 23,
+    "n_samples_total": 401,
+    "n_samples_train": 318,
+    "n_samples_test": 83,
+    "n_genes": 4000,
+    "donors_by_diagnosis": {
+      "Control": 27,
+      "AsymAD": 33,
+      "AD": 52
+    },
+    "demographics": {
+      "Control": {
+        "n_donors": 26,
+        "age_mean": 70.88461538461539,
+        "age_std": 16.553735344210196,
+        "age_range": [
+          40.0,
+          95.0
+        ],
+        "female_count": 12,
+        "male_count": 15,
+        "female_pct": 46.15384615384615
+      },
+      "AsymAD": {
+        "n_donors": 33,
+        "age_mean": 85.84848484848484,
+        "age_std": 8.849863036091335,
+        "age_range": [
+          55.0,
+          99.0
+        ],
+        "female_count": 23,
+        "male_count": 10,
+        "female_pct": 69.6969696969697
+      },
+      "AD": {
+        "n_donors": 52,
+        "age_mean": 82.15384615384616,
+        "age_std": 9.99487047927265,
+        "age_range": [
+          61.0,
+          105.0
+        ],
+        "female_count": 29,
+        "male_count": 23,
+        "female_pct": 55.769230769230774
+      },
+      "statistical_tests": {
+        "age_anova_f": 13.035767359018674,
+        "age_anova_p": 8.486086105771342e-06,
+        "sex_chi2_stat": 3.9415792540792536,
+        "sex_chi2_p": 0.13934678077551332
+      }
+    }
+  },
+  "progression_benchmarks": {
+    "Age + Sex Only": {
+      "n_donors": 23,
+      "n_samples": 83,
+      "sample_level": {
+        "spearman_rho": -0.037166162624431134,
+        "spearman_p_nominal": 0.7386964752046772,
+        "spearman_rho_95ci": [
+          -0.5191128989885987,
+          0.46005403520895494
+        ],
+        "pearson_r": -0.007185373455286026,
+        "r2": -0.09260320663452148,
+        "mae": 0.7550783157348633
+      },
+      "donor_level": {
+        "spearman_rho": 0.03530868072285333,
+        "spearman_p_nominal": 0.8729278158542638,
+        "spearman_p_permutation": 0.868,
+        "spearman_rho_95ci": [
+          -0.37023624122712434,
+          0.38056916143327507
+        ],
+        "pearson_r": 0.17609161138534546,
+        "r2": -0.0029784440994262695,
+        "r2_95ci": [
+          -0.38490015268325806,
+          0.1667158007621765
+        ],
+        "mae": 0.7191221714019775
+      },
+      "tuned_alpha": 10.0,
+      "unsupervised_pc1_rho": null,
+      "unsupervised_pc1_p": null
+    },
+    "Raw HVG (4,000 genes)": {
+      "n_donors": 23,
+      "n_samples": 83,
+      "sample_level": {
+        "spearman_rho": 0.811563166222637,
+        "spearman_p_nominal": 1.3481671149584786e-20,
+        "spearman_rho_95ci": [
+          0.6622156054152868,
+          0.8902104059335324
+        ],
+        "pearson_r": 0.7936936843356794,
+        "r2": 0.6134595437833268,
+        "mae": 0.38230968037512275
+      },
+      "donor_level": {
+        "spearman_rho": 0.8598227289184035,
+        "spearman_p_nominal": 1.4600843697929326e-07,
+        "spearman_p_permutation": 0.0,
+        "spearman_rho_95ci": [
+          0.7569010145403781,
+          0.9198662110077999
+        ],
+        "pearson_r": 0.845710606796125,
+        "r2": 0.6653945254984988,
+        "r2_95ci": [
+          0.5204888500734512,
+          0.7707720119577429
+        ],
+        "mae": 0.3604406902115193
+      },
+      "tuned_alpha": 1000.0,
+      "unsupervised_pc1_rho": null,
+      "unsupervised_pc1_p": null
+    },
+    "PCA (64 components)": {
+      "n_donors": 23,
+      "n_samples": 83,
+      "sample_level": {
+        "spearman_rho": 0.8418809218142378,
+        "spearman_p_nominal": 2.0938114212480012e-23,
+        "spearman_rho_95ci": [
+          0.7199049523781307,
+          0.8913297498706664
+        ],
+        "pearson_r": 0.8178660850437334,
+        "r2": 0.6426549739570673,
+        "mae": 0.38527200037849063
+      },
+      "donor_level": {
+        "spearman_rho": 0.8726559039768871,
+        "spearman_p_nominal": 5.651516374205195e-08,
+        "spearman_p_permutation": 0.0,
+        "spearman_rho_95ci": [
+          0.8034069428738385,
+          0.9204669240601586
+        ],
+        "pearson_r": 0.8723640488673998,
+        "r2": 0.687264287119739,
+        "r2_95ci": [
+          0.5738341522164967,
+          0.7699536823290399
+        ],
+        "mae": 0.3651123574795889
+      },
+      "tuned_alpha": 1000.0,
+      "unsupervised_pc1_rho": -0.036392514752653704,
+      "unsupervised_pc1_p": 0.7439465276117494
+    },
+    "Residualized PCA (64-dim)": {
+      "n_donors": 23,
+      "n_samples": 83,
+      "sample_level": {
+        "spearman_rho": 0.6808325557899444,
+        "spearman_p_nominal": 1.4254335042650336e-12,
+        "spearman_rho_95ci": [
+          0.4125108345287729,
+          0.832093666703151
+        ],
+        "pearson_r": 0.6624330832989656,
+        "r2": 0.38448842976124376,
+        "mae": 0.49046332269501625
+      },
+      "donor_level": {
+        "spearman_rho": 0.7667822097443971,
+        "spearman_p_nominal": 1.9746466025062463e-05,
+        "spearman_p_permutation": 0.0,
+        "spearman_rho_95ci": [
+          0.6011723623100154,
+          0.8718669946637932
+        ],
+        "pearson_r": 0.7246877786411321,
+        "r2": 0.3916318734262385,
+        "r2_95ci": [
+          0.24866873366955305,
+          0.513257574655411
+        ],
+        "mae": 0.5070788746672118
+      },
+      "tuned_alpha": 10000.0,
+      "unsupervised_pc1_rho": -0.023514473652931158,
+      "unsupervised_pc1_p": 0.8328815675809004
+    },
+    "Unconditioned VAE (64-dim)": {
+      "n_donors": 23,
+      "n_samples": 83,
+      "sample_level": {
+        "spearman_rho": 0.6034186046360857,
+        "spearman_p_nominal": 1.5627407357929963e-09,
+        "spearman_rho_95ci": [
+          0.3584554181128136,
+          0.7763072598373336
+        ],
+        "pearson_r": 0.5583142042160034,
+        "r2": 0.29559171199798584,
+        "mae": 0.5380526781082153
+      },
+      "donor_level": {
+        "spearman_rho": 0.7924485598613644,
+        "spearman_p_nominal": 6.5630545149484e-06,
+        "spearman_p_permutation": 0.0,
+        "spearman_rho_95ci": [
+          0.643718569095626,
+          0.8989373822748998
+        ],
+        "pearson_r": 0.7751667499542236,
+        "r2": 0.4365493059158325,
+        "r2_95ci": [
+          0.2806914746761322,
+          0.5680484175682068
+        ],
+        "mae": 0.4884914755821228
+      },
+      "tuned_alpha": 10.0,
+      "unsupervised_pc1_rho": -0.02687688647270206,
+      "unsupervised_pc1_p": 0.8094077221544437
+    },
+    "Conditional VAE (64-dim)": {
+      "n_donors": 23,
+      "n_samples": 83,
+      "sample_level": {
+        "spearman_rho": 0.5826164773244364,
+        "spearman_p_nominal": 7.545906659816804e-09,
+        "spearman_rho_95ci": [
+          0.3142507059840531,
+          0.7739778672628276
+        ],
+        "pearson_r": 0.5810335874557495,
+        "r2": 0.316756010055542,
+        "mae": 0.5254273414611816
+      },
+      "donor_level": {
+        "spearman_rho": 0.8084900286844691,
+        "spearman_p_nominal": 3.042904572788471e-06,
+        "spearman_p_permutation": 0.0,
+        "spearman_rho_95ci": [
+          0.6638968769185064,
+          0.9115331471241691
+        ],
+        "pearson_r": 0.7505825757980347,
+        "r2": 0.48233985900878906,
+        "r2_95ci": [
+          0.27980583906173706,
+          0.6505558490753174
+        ],
+        "mae": 0.4529954195022583
+      },
+      "tuned_alpha": 10.0,
+      "unsupervised_pc1_rho": -0.04652458538289669,
+      "unsupervised_pc1_p": 0.6761976745136024
+    }
+  },
+  "classification_benchmarks": {
+    "Age + Sex Only": {
+      "mean_auc": 0.7444696969696969,
+      "std_auc": 0.1309118824557021,
+      "fold_aucs": [
+        0.8409,
+        0.5485,
+        0.8652,
+        0.789,
+        0.6788
+      ]
+    },
+    "Raw HVG (4,000 genes)": {
+      "mean_auc": 0.9889215686274511,
+      "std_auc": 0.007592620427235155,
+      "fold_aucs": [
+        0.9864,
+        0.9926,
+        0.9803,
+        0.9853,
+        1.0
+      ]
+    },
+    "PCA (64-dim)": {
+      "mean_auc": 0.9892602495543672,
+      "std_auc": 0.009641644331242923,
+      "fold_aucs": [
+        0.9955,
+        0.9926,
+        0.9788,
+        0.9794,
+        1.0
+      ]
+    },
+    "Residualized PCA (64-dim)": {
+      "mean_auc": 0.9097237076648842,
+      "std_auc": 0.0660709680743177,
+      "fold_aucs": [
+        0.8182,
+        0.9294,
+        0.9591,
+        0.8662,
+        0.9758
+      ]
+    },
+    "Unconditioned VAE": {
+      "mean_auc": 0.8552139037433155,
+      "std_auc": 0.08063226462067218,
+      "fold_aucs": [
+        0.7364,
+        0.9559,
+        0.8591,
+        0.8338,
+        0.8909
+      ]
+    },
+    "Conditional VAE": {
+      "mean_auc": 0.9010249554367201,
+      "std_auc": 0.03597785978724106,
+      "fold_aucs": [
+        0.8455,
+        0.9397,
+        0.9061,
+        0.8912,
+        0.9227
+      ]
+    }
+  },
+  "resilience_asymad_vs_ad": {
+    "Age + Sex Only": {
+      "mean_auc": 0.38273980921039746,
+      "std_auc": 0.1510649797188644,
+      "fold_aucs": [
+        0.2029,
+        0.5068,
+        0.5266,
+        0.4361,
+        0.2413
+      ]
+    },
+    "Raw HVG (4,000 genes)": {
+      "mean_auc": 0.9252678693855165,
+      "std_auc": 0.026680540325687483,
+      "fold_aucs": [
+        0.8994,
+        0.9129,
+        0.9344,
+        0.9123,
+        0.9674
+      ]
+    },
+    "PCA (64-dim)": {
+      "mean_auc": 0.9214158390628979,
+      "std_auc": 0.043210435657207606,
+      "fold_aucs": [
+        0.8452,
+        0.9367,
+        0.9446,
+        0.9307,
+        0.9499
+      ]
+    },
+    "Residualized PCA (64-dim)": {
+      "mean_auc": 0.9112289671113201,
+      "std_auc": 0.04453281288125967,
+      "fold_aucs": [
+        0.8474,
+        0.9344,
+        0.9299,
+        0.8853,
+        0.9592
+      ]
+    },
+    "Unconditioned VAE": {
+      "mean_auc": 0.8818549097960864,
+      "std_auc": 0.049621308978260836,
+      "fold_aucs": [
+        0.816,
+        0.9367,
+        0.8897,
+        0.8485,
+        0.9184
+      ]
+    },
+    "Conditional VAE": {
+      "mean_auc": 0.8926818279759455,
+      "std_auc": 0.03742272004198752,
+      "fold_aucs": [
+        0.8442,
+        0.931,
+        0.9276,
+        0.869,
+        0.8916
+      ]
+    }
+  },
+  "leakage_inflation": {
+    "Age + Sex Only": {
+      "donor_grouped_auc_mean": 0.7444696969696969,
+      "donor_grouped_auc_std": 0.1309118824557021,
+      "sample_split_auc_mean": 0.7355035650623887,
+      "sample_split_auc_std": 0.08615730138351488,
+      "inflation_delta": -0.008966131907308217
+    },
+    "Raw HVG (4,000 genes)": {
+      "donor_grouped_auc_mean": 0.9889215686274511,
+      "donor_grouped_auc_std": 0.007592620427235155,
+      "sample_split_auc_mean": 0.9905080213903744,
+      "sample_split_auc_std": 0.011786629494274376,
+      "inflation_delta": 0.0015864527629233516
+    },
+    "PCA (64-dim)": {
+      "donor_grouped_auc_mean": 0.9892602495543672,
+      "donor_grouped_auc_std": 0.009641644331242923,
+      "sample_split_auc_mean": 0.9895632798573976,
+      "sample_split_auc_std": 0.009052292944306654,
+      "inflation_delta": 0.0003030303030303605
+    },
+    "Residualized PCA (64-dim)": {
+      "donor_grouped_auc_mean": 0.9097237076648842,
+      "donor_grouped_auc_std": 0.0660709680743177,
+      "sample_split_auc_mean": 0.9375133689839572,
+      "sample_split_auc_std": 0.03280227324523217,
+      "inflation_delta": 0.02778966131907301
+    },
+    "Unconditioned VAE": {
+      "donor_grouped_auc_mean": 0.8552139037433155,
+      "donor_grouped_auc_std": 0.08063226462067218,
+      "sample_split_auc_mean": 0.8635026737967915,
+      "sample_split_auc_std": 0.06588697127615226,
+      "inflation_delta": 0.008288770053475947
+    },
+    "Conditional VAE": {
+      "donor_grouped_auc_mean": 0.9010249554367201,
+      "donor_grouped_auc_std": 0.03597785978724106,
+      "sample_split_auc_mean": 0.8924866310160429,
+      "sample_split_auc_std": 0.03582573970177205,
+      "inflation_delta": -0.008538324420677257
+    }
+  },
+  "regional_vulnerability": {
+    "Temporal_Cortex": {
+      "n_samples": 115,
+      "n_test_samples": 23,
+      "progression_rho": 0.751575914827944,
+      "progression_rho_95ci": [
+        0.4731824234590162,
+        0.8880136153501392
+      ],
+      "progression_p": 3.561670991063493e-05,
+      "progression_r2": 0.48709356784820557,
+      "progression_mae": 0.485680490732193,
+      "classification_auc_mean": 0.9483116883116883,
+      "classification_auc_std": 0.04919813907038915
+    },
+    "Entorhinal_Cortex": {
+      "n_samples": 98,
+      "n_test_samples": 23,
+      "progression_rho": 0.7229988054812211,
+      "progression_rho_95ci": [
+        0.3116587663283695,
+        0.9320181224018307
+      ],
+      "progression_p": 9.720119627037289e-05,
+      "progression_r2": 0.39272475242614746,
+      "progression_mae": 0.42070525884628296,
+      "classification_auc_mean": 0.975,
+      "classification_auc_std": 0.055901699437494734
+    },
+    "Frontal_Cortex": {
+      "n_samples": 96,
+      "n_test_samples": 20,
+      "progression_rho": 0.43948781612003934,
+      "progression_rho_95ci": [
+        0.06086768691333345,
+        0.7407147514474991
+      ],
+      "progression_p": 0.052516416221723476,
+      "progression_r2": 0.15622949600219727,
+      "progression_mae": 0.5805290937423706,
+      "classification_auc_mean": 0.8287500000000001,
+      "classification_auc_std": 0.16271620232785672
+    },
+    "Cerebellum": {
+      "n_samples": 92,
+      "n_test_samples": 17,
+      "progression_rho": 0.3063499100370019,
+      "progression_rho_95ci": [
+        -0.23399302143018633,
+        0.6664154581012642
+      ],
+      "progression_p": 0.23172586160656594,
+      "progression_r2": 0.09342432022094727,
+      "progression_mae": 0.656059741973877,
+      "classification_auc_mean": 0.7478571428571429,
+      "classification_auc_std": 0.2213183769586065
+    }
+  },
+  "latent_pc1_region_test": {
+    "anova_f": 334.6966857910156,
+    "anova_p": 0.0,
+    "cerebellum_vs_cortex_r": -0.7974614643297275,
+    "cerebellum_vs_cortex_r2": 0.6359447870909133,
+    "cerebellum_vs_cortex_p": 1.4181467571873976e-89
+  },
+  "pathway_enrichment": {
+    "GO_Biological_Process_2023": [
+      {
+        "term": "Bicellular Tight Junction Assembly (GO:0070830)",
+        "p_value": 0.00042193054297438723,
+        "adj_p_value": 0.0897192334724217,
+        "combined_score": 98.06540788217411,
+        "genes": [
+          "CLDN5",
+          "PECAM1",
+          "ESAM",
+          "CLDN2"
+        ]
+      },
+      {
+        "term": "Response To Fibroblast Growth Factor (GO:0071774)",
+        "p_value": 0.0004292373591480759,
+        "adj_p_value": 0.0897192334724217,
+        "combined_score": 184.60405229479696,
+        "genes": [
+          "SFRP1",
+          "ZFP36",
+          "NDNF"
+        ]
+      },
+      {
+        "term": "Neutrophil Extravasation (GO:0072672)",
+        "p_value": 0.0005505377030005599,
+        "adj_p_value": 0.0897192334724217,
+        "combined_score": 670.919352240136,
+        "genes": [
+          "JAML",
+          "PECAM1"
+        ]
+      },
+      {
+        "term": "Glomerulus Vasculature Development (GO:0072012)",
+        "p_value": 0.0005505377030005599,
+        "adj_p_value": 0.0897192334724217,
+        "combined_score": 670.919352240136,
+        "genes": [
+          "ANGPT2",
+          "PECAM1"
+        ]
+      },
+      {
+        "term": "Cardiac Muscle Tissue Development (GO:0048738)",
+        "p_value": 0.0006221011134775014,
+        "adj_p_value": 0.0897192334724217,
+        "combined_score": 83.43974975116217,
+        "genes": [
+          "CSRP3",
+          "TCAP",
+          "SIK1",
+          "ADAMTS9"
+        ]
+      },
+      {
+        "term": "Tight Junction Assembly (GO:0120192)",
+        "p_value": 0.0006689947152869721,
+        "adj_p_value": 0.0897192334724217,
+        "combined_score": 80.92818048684136,
+        "genes": [
+          "CLDN5",
+          "PECAM1",
+          "ESAM",
+          "CLDN2"
+        ]
+      },
+      {
+        "term": "Apical Junction Assembly (GO:0043297)",
+        "p_value": 0.0007183381269625146,
+        "adj_p_value": 0.0897192334724217,
+        "combined_score": 78.5335284289601,
+        "genes": [
+          "CLDN5",
+          "PECAM1",
+          "ESAM",
+          "CLDN2"
+        ]
+      },
+      {
+        "term": "Cellular Response To Fibroblast Growth Factor Stimulus (GO:0044344)",
+        "p_value": 0.0007702016852116428,
+        "adj_p_value": 0.0897192334724217,
+        "combined_score": 76.24830646440529,
+        "genes": [
+          "ZFP36",
+          "SFRP1",
+          "NDNF",
+          "FGFR1"
+        ]
+      },
+      {
+        "term": "Regulation Of Nucleotide-Binding Oligomerization Domain Containing 2 Signaling Pathway (GO:0070432)",
+        "p_value": 0.0008217415222286749,
+        "adj_p_value": 0.0897192334724217,
+        "combined_score": 476.3096763717786,
+        "genes": [
+          "SLC15A3",
+          "HSPA1A"
+        ]
+      },
+      {
+        "term": "Cellular Response To Laminar Fluid Shear Stress (GO:0071499)",
+        "p_value": 0.0008217415222286749,
+        "adj_p_value": 0.0897192334724217,
+        "combined_score": 476.3096763717786,
+        "genes": [
+          "KLF4",
+          "KLF2"
+        ]
+      }
+    ],
+    "Reactome_2022": [
+      {
+        "term": "Synthesis Of Ketone Bodies R-HSA-77111",
+        "p_value": 0.0015188640882368835,
+        "adj_p_value": 0.1960101733897963,
+        "combined_score": 290.05279964440666,
+        "genes": [
+          "SOAT1",
+          "HMGCS2"
+        ]
+      },
+      {
+        "term": "RUNX3 Regulates YAP1-mediated Transcription R-HSA-8951671",
+        "p_value": 0.0015188640882368835,
+        "adj_p_value": 0.1960101733897963,
+        "combined_score": 290.05279964440666,
+        "genes": [
+          "WWTR1",
+          "TEAD2"
+        ]
+      },
+      {
+        "term": "Keratan Sulfate/Keratin Metabolism R-HSA-1638074",
+        "p_value": 0.0019129313653444171,
+        "adj_p_value": 0.1960101733897963,
+        "combined_score": 84.39165171407735,
+        "genes": [
+          "CHST6",
+          "B4GALT1",
+          "HEXA"
+        ]
+      },
+      {
+        "term": "Ketone Body Metabolism R-HSA-74182",
+        "p_value": 0.0024171012251306507,
+        "adj_p_value": 0.1960101733897963,
+        "combined_score": 201.94551776695783,
+        "genes": [
+          "SOAT1",
+          "HMGCS2"
+        ]
+      },
+      {
+        "term": "SLC-mediated Transmembrane Transport R-HSA-425407",
+        "p_value": 0.0026559644090758307,
+        "adj_p_value": 0.1960101733897963,
+        "combined_score": 23.722061659079653,
+        "genes": [
+          "SLC22A5",
+          "SLC13A4",
+          "SLC16A10",
+          "SLC15A3",
+          "SLC5A3",
+          "CP",
+          "SLC5A5"
+        ]
+      },
+      {
+        "term": "Diseases Associated With Glycosaminoglycan Metabolism R-HSA-3560782",
+        "p_value": 0.003333988620254291,
+        "adj_p_value": 0.19650104831368734,
+        "combined_score": 62.330473024396646,
+        "genes": [
+          "CHST6",
+          "B4GALT1",
+          "HEXA"
+        ]
+      },
+      {
+        "term": "Transport Of Bile Salts And Organic Acids, Metal Ions And Amine Compounds R-HSA-425366",
+        "p_value": 0.00400959545202075,
+        "adj_p_value": 0.19650104831368734,
+        "combined_score": 36.4520131932931,
+        "genes": [
+          "SLC13A4",
+          "SLC22A5",
+          "SLC5A3",
+          "CP"
+        ]
+      },
+      {
+        "term": "Diseases Of Glycosylation R-HSA-3781865",
+        "p_value": 0.004501418959174439,
+        "adj_p_value": 0.19650104831368734,
+        "combined_score": 26.61446369864555,
+        "genes": [
+          "CHST6",
+          "B4GALT1",
+          "ADAMTS1",
+          "HEXA",
+          "ADAMTS9"
+        ]
+      },
+      {
+        "term": "TP53 Regulates Transcription Of Additional Cell Death Genes With Uncertain Roles In P53-Dependent Apoptosis R-HSA-6803205",
+        "p_value": 0.004792708495455789,
+        "adj_p_value": 0.19650104831368734,
+        "combined_score": 119.31081614567599,
+        "genes": [
+          "BCL6",
+          "PERP"
+        ]
+      },
+      {
+        "term": "YAP1- And WWTR1 (TAZ)-stimulated Gene Expression R-HSA-2032785",
+        "p_value": 0.0055029595646660405,
+        "adj_p_value": 0.20305920793617688,
+        "combined_score": 107.27794396232315,
+        "genes": [
+          "WWTR1",
+          "TEAD2"
+        ]
+      }
+    ]
+  },
+  "top_progression_genes": [
+    "WWTR1",
+    "EFCAB3",
+    "OR2A20P",
+    "TEAD2",
+    "SLC5A3",
+    "SNORA73A",
+    "DUSP1",
+    "IL1R1",
+    "FZD6",
+    "SNORA61",
+    "SLC13A4",
+    "SRGN",
+    "B4GALT1",
+    "CFAP53",
+    "LEF1",
+    "FOXJ1",
+    "KLF4",
+    "BACE2",
+    "MTFR1",
+    "IL4R",
+    "SNORD17",
+    "CDCA7L",
+    "PDLIM1",
+    "C6orf118",
+    "LRRC32"
+  ],
+  "top_gene_correlations": {
+    "WWTR1": 0.5789,
+    "EFCAB3": 0.5716,
+    "OR2A20P": 0.5626,
+    "TEAD2": 0.548,
+    "SLC5A3": 0.5334,
+    "SNORA73A": 0.5126,
+    "DUSP1": 0.5056,
+    "IL1R1": 0.497,
+    "FZD6": 0.4904,
+    "SNORA61": 0.4815,
+    "SLC13A4": 0.4801,
+    "SRGN": 0.4742,
+    "B4GALT1": 0.4709,
+    "CFAP53": 0.465,
+    "LEF1": 0.4637,
+    "FOXJ1": 0.4628,
+    "KLF4": 0.459,
+    "BACE2": 0.4568,
+    "MTFR1": 0.4501,
+    "IL4R": 0.4454,
+    "SNORD17": 0.4445,
+    "CDCA7L": 0.4429,
+    "PDLIM1": 0.4414,
+    "C6orf118": 0.4398,
+    "LRRC32": 0.4313
+  }
+}

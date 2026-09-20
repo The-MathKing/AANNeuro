@@ -1,0 +1,82 @@
+# Configuration file for Leakage-Aware Alzheimer's Disease Multi-Cohort Analysis
+random_seed: 42
+n_bootstrap: 2000
+n_permutations: 5000
+
+paths:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  results_dir: "results"
+  figures_dir: "figures"
+  paper_dir: "paper"
+  ledger_path: "ledger.csv"
+  checksums_path: "data/raw/checksums.sha256"
+
+cohorts:
+  gse118553:
+    name: "GSE118553"
+    author: "Patel et al. (2019)"
+    file: "GSE118553_series_matrix.txt.gz"
+    platform: "GPL10558"
+    annot_file: "GPL10558.annot.gz"
+    regions:
+      - "Temporal_Cortex"
+      - "Frontal_Cortex"
+      - "Entorhinal_Cortex"
+      - "Cerebellum"
+    groups:
+      - "CTL"
+      - "AsymAD"
+      - "AD"
+
+  gse84422:
+    name: "GSE84422_MSBB"
+    author: "Wang et al. (2016)"
+    files:
+      gpl96: "GSE84422-GPL96_series_matrix.txt.gz"
+      gpl97: "GSE84422-GPL97_series_matrix.txt.gz"
+      gpl570: "GSE84422-GPL570_series_matrix.txt.gz"
+    annot_files:
+      gpl96: "GPL96_table.txt.gz"
+      gpl97: "GPL97_table.txt.gz"
+      gpl570: "GPL570_table.txt.gz"
+
+  gse132903:
+    name: "GSE132903"
+    author: "Piras et al. (2019)"
+    file: "GSE132903_series_matrix.txt.gz"
+    platform: "GPL10558"
+    annot_file: "GPL10558.annot.gz"
+    region: "middle temporal gyrus"
+    role: "STRICT_LOCKBOX_VALIDATION"
+
+pre_registered_ranking:
+  tier_1:
+    stage: "Transentorhinal / Entorhinal (Braak I-II)"
+    rank: 1
+    regions: ["Parahippocampal Gyrus", "Entorhinal_Cortex", "Hippocampus", "BM28", "BM34", "BM36"]
+  tier_2:
+    stage: "Limbic / Temporal (Braak III-IV)"
+    rank: 2
+    regions: ["Temporal_Cortex", "Inferior Temporal Gyrus", "Superior Temporal Gyrus", "Temporal Pole", "Amygdala", "BM38", "BM20", "BM21", "BM22"]
+  tier_3:
+    stage: "Isocortical Association (Braak V-VI)"
+    rank: 3
+    regions: ["Frontal_Cortex", "Frontal Pole", "Dorsolateral Prefrontal Cortex", "Inferior Frontal Gyrus", "Superior Parietal Lobule", "Inferior Parietal Lobule", "Anterior Cingulate Cortex", "Posterior Cingulate Cortex", "BM9", "BM10", "BM44", "BM46", "BM7", "BM39", "BM40", "BM24", "BM32", "BM23", "BM31"]
+  tier_4:
+    stage: "Primary Cortical (Sensory/Motor)"
+    rank: 4
+    regions: ["Primary Visual Cortex", "Primary Motor Cortex", "Primary Auditory Cortex", "BM17", "BM4", "BM41", "BM42"]
+  tier_5:
+    stage: "Subcortical / Cerebellar"
+    rank: 5
+    regions: ["Cerebellum", "Caudate Nucleus", "Putamen"]
+
+resilience_criteria:
+  resilient:
+    braak_min: 4
+    cdr_max: 0.5
+  demented:
+    braak_min: 4
+    cdr_min: 1.0
+  min_resilient_sample_size: 10

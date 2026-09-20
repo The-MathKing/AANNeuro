@@ -1,0 +1,44 @@
+# Data (large raw and processed GEO microarray matrices)
+data/
+
+# Manuscripts, paper drafts, and submission notes
+manuscript*
+paper/
+ABSTRACT_FOR_PORTAL.txt
+REVISION_NOTES*.md
+EXECUTION_CHECKLIST.md
+PREREGISTRATION.md
+README_COMPILATION.md
+
+# Loose root figure files (canonical copies stored in figures/)
+/fig1_*
+/fig2_*
+/fig3_*
+/fig4_*
+
+# Python caches & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+env/
+.env
+
+# LaTeX auxiliary build files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# macOS / OS artifacts
+.DS_Store
+._*
+Thumbs.db
+
+# Internal tooling
+humanize_manuscript.py
+tests/test_humanize_manuscript.py
