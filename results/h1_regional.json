@@ -1,0 +1,402 @@
+{
+  "hypothesis": "H1_Regional_Vulnerability",
+  "primary_metric": "Spearman_rho_vs_apriori_Braak_order",
+  "observed_rho_prediction": 0.4060701362683535,
+  "permutation_p_value": 0.04019196160767846,
+  "parametric_p_value": 0.08451125959480965,
+  "unmapped_fallback_rho": 0.3843,
+  "unmapped_fallback_perm_p": 0.05239,
+  "unmapped_fallback_source": "first H1 run, archived ledger row H1_REG_001 (ledger_draft8_archive.csv); not re-executable after the tier-mapping fix",
+  "permutation_unit": "tier labels shuffled across the 19 regions; donors are not permuted",
+  "n_permutations": 5000,
+  "loro": {
+    "BM10_FP": {
+      "rho": 0.3846381690963828,
+      "perm_p": 0.05798840231953609
+    },
+    "BM22_STG": {
+      "rho": 0.3708429875640771,
+      "perm_p": 0.0625874825034993
+    },
+    "BM36_PHG": {
+      "rho": 0.3482043168116189,
+      "perm_p": 0.07538492301539693
+    },
+    "Anterior_Cingulate": {
+      "rho": 0.3975310686191666,
+      "perm_p": 0.047390521895620874
+    },
+    "BM20_ITG": {
+      "rho": 0.3482043168116189,
+      "perm_p": 0.07958408318336332
+    },
+    "Middle_Temporal_Gyrus": {
+      "rho": 0.396715754138315,
+      "perm_p": 0.04879024195160968
+    },
+    "BM23_PCC": {
+      "rho": 0.43083772571969137,
+      "perm_p": 0.03679264147170566
+    },
+    "BM38_TP": {
+      "rho": 0.4031839457818745,
+      "perm_p": 0.046790641871625675
+    },
+    "BM9_DLPFC": {
+      "rho": 0.412572784729081,
+      "perm_p": 0.041791641671665665
+    },
+    "Prefrontal_Cortex": {
+      "rho": 0.4351353588939526,
+      "perm_p": 0.03439312137572485
+    },
+    "HIP": {
+      "rho": 0.4011967033811075,
+      "perm_p": 0.05058988202359528
+    },
+    "Occipital_Visual_Cortex": {
+      "rho": 0.37706122136621173,
+      "perm_p": 0.0625874825034993
+    },
+    "BM44_IFG": {
+      "rho": 0.43083772571969137,
+      "perm_p": 0.03799240151969606
+    },
+    "CAUD": {
+      "rho": 0.37120358718986934,
+      "perm_p": 0.060387922415516895
+    },
+    "PUT": {
+      "rho": 0.37120358718986934,
+      "perm_p": 0.060387922415516895
+    },
+    "AMY": {
+      "rho": 0.5616546410490819,
+      "perm_p": 0.005198960207958408
+    },
+    "Nucleus_Accumbens": {
+      "rho": 0.357093509314231,
+      "perm_p": 0.06778644271145771
+    },
+    "BM7_SPL": {
+      "rho": 0.3846381690963828,
+      "perm_p": 0.05438912217556489
+    },
+    "Precentral_Gyrus": {
+      "rho": 0.5150634551227214,
+      "perm_p": 0.013597280543891222
+    }
+  },
+  "loro_rho_min": 0.3482043168116189,
+  "loro_rho_max": 0.5616546410490819,
+  "loro_p_min": 0.005198960207958408,
+  "loro_p_max": 0.07958408318336332,
+  "loro_n_sig": 9,
+  "loro_n_runs": 19,
+  "loro_worst_region": "BM20_ITG",
+  "lto_n_sig": 54,
+  "lto_n_runs": 171,
+  "lto_rho_min": 0.2744672668338285,
+  "lto_rho_max": 0.6916411164253422,
+  "lto_p_max": 0.14342828585707146,
+  "median_region_ci_halfwidth": 0.26789529803200585,
+  "n_regions_ci_excluding_zero": 2,
+  "n_regions_msbb": 19,
+  "regional_results_msbb": {
+    "BM10_FP": {
+      "region": "BM10_FP",
+      "n_samples": 63,
+      "n_donors": 63,
+      "apriori_vulnerability_rank": 3,
+      "cv_spearman_rho": 0.06997934478349736,
+      "cv_spearman_p": 0.5857604305849345,
+      "cv_spearman_ci_lower": -0.19669416477660986,
+      "cv_spearman_ci_upper": 0.308441746626869,
+      "cv_pearson_r": 0.12894115327931632,
+      "high_vs_low_braak_auc": 0.6039215686274509,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "BM22_STG": {
+      "region": "BM22_STG",
+      "n_samples": 60,
+      "n_donors": 60,
+      "apriori_vulnerability_rank": 2,
+      "cv_spearman_rho": 0.2676188042027707,
+      "cv_spearman_p": 0.038712388920108615,
+      "cv_spearman_ci_lower": -0.0006889411884467205,
+      "cv_spearman_ci_upper": 0.5062472730776141,
+      "cv_pearson_r": 0.28238268362018265,
+      "high_vs_low_braak_auc": 0.5555555555555556,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "BM36_PHG": {
+      "region": "BM36_PHG",
+      "n_samples": 60,
+      "n_donors": 60,
+      "apriori_vulnerability_rank": 2,
+      "cv_spearman_rho": 0.3171690341648778,
+      "cv_spearman_p": 0.013540918006589268,
+      "cv_spearman_ci_lower": 0.06630272770869831,
+      "cv_spearman_ci_upper": 0.5383857677830722,
+      "cv_pearson_r": 0.3446398660737286,
+      "high_vs_low_braak_auc": 0.5208333333333333,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "Anterior_Cingulate": {
+      "region": "Anterior_Cingulate",
+      "n_samples": 59,
+      "n_donors": 59,
+      "apriori_vulnerability_rank": 3,
+      "cv_spearman_rho": 0.1286131446363538,
+      "cv_spearman_p": 0.33164850531263007,
+      "cv_spearman_ci_lower": -0.10543902303016145,
+      "cv_spearman_ci_upper": 0.3671357077559131,
+      "cv_pearson_r": 0.10892509362014378,
+      "high_vs_low_braak_auc": 0.5363247863247863,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "BM20_ITG": {
+      "region": "BM20_ITG",
+      "n_samples": 58,
+      "n_donors": 58,
+      "apriori_vulnerability_rank": 2,
+      "cv_spearman_rho": 0.3217700002105589,
+      "cv_spearman_p": 0.013775168142197591,
+      "cv_spearman_ci_lower": 0.056451234789203844,
+      "cv_spearman_ci_upper": 0.5487547264809577,
+      "cv_pearson_r": 0.38808257451526224,
+      "high_vs_low_braak_auc": 0.5520833333333334,
+      "n_fdr_genes": 1,
+      "top_sig_genes": [
+        "CXCR4"
+      ]
+    },
+    "Middle_Temporal_Gyrus": {
+      "region": "Middle_Temporal_Gyrus",
+      "n_samples": 58,
+      "n_donors": 58,
+      "apriori_vulnerability_rank": 2,
+      "cv_spearman_rho": 0.21946314367490838,
+      "cv_spearman_p": 0.09787474199470098,
+      "cv_spearman_ci_lower": -0.06658775060046902,
+      "cv_spearman_ci_upper": 0.46920284546354263,
+      "cv_pearson_r": 0.22412252479126243,
+      "high_vs_low_braak_auc": 0.5046296296296297,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "BM23_PCC": {
+      "region": "BM23_PCC",
+      "n_samples": 58,
+      "n_donors": 58,
+      "apriori_vulnerability_rank": 3,
+      "cv_spearman_rho": 0.23298573195634636,
+      "cv_spearman_p": 0.07839921784968044,
+      "cv_spearman_ci_lower": -0.028111659042964816,
+      "cv_spearman_ci_upper": 0.47204505786535506,
+      "cv_pearson_r": 0.24384175268384523,
+      "high_vs_low_braak_auc": 0.5763888888888888,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "BM38_TP": {
+      "region": "BM38_TP",
+      "n_samples": 58,
+      "n_donors": 58,
+      "apriori_vulnerability_rank": 2,
+      "cv_spearman_rho": 0.08259832204869019,
+      "cv_spearman_p": 0.5376231843206927,
+      "cv_spearman_ci_lower": -0.18273591211611917,
+      "cv_spearman_ci_upper": 0.3578748918340926,
+      "cv_pearson_r": 0.052173867230905745,
+      "high_vs_low_braak_auc": 0.6296992481203009,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "BM9_DLPFC": {
+      "region": "BM9_DLPFC",
+      "n_samples": 57,
+      "n_donors": 57,
+      "apriori_vulnerability_rank": 3,
+      "cv_spearman_rho": -0.045652911556123624,
+      "cv_spearman_p": 0.7359572803937755,
+      "cv_spearman_ci_lower": -0.31727460224205445,
+      "cv_spearman_ci_upper": 0.2269437390332713,
+      "cv_pearson_r": -0.0027225169307087543,
+      "high_vs_low_braak_auc": 0.49264705882352944,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "Prefrontal_Cortex": {
+      "region": "Prefrontal_Cortex",
+      "n_samples": 56,
+      "n_donors": 56,
+      "apriori_vulnerability_rank": 3,
+      "cv_spearman_rho": -0.12598494783921557,
+      "cv_spearman_p": 0.3548542127586799,
+      "cv_spearman_ci_lower": -0.39074979474679633,
+      "cv_spearman_ci_upper": 0.16353936225606916,
+      "cv_pearson_r": -0.09895159462836783,
+      "high_vs_low_braak_auc": 0.5047619047619047,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "HIP": {
+      "region": "HIP",
+      "n_samples": 55,
+      "n_donors": 55,
+      "apriori_vulnerability_rank": 1,
+      "cv_spearman_rho": 0.1345859215568674,
+      "cv_spearman_p": 0.3272555990261662,
+      "cv_spearman_ci_lower": -0.15452938322589313,
+      "cv_spearman_ci_upper": 0.3998997992441573,
+      "cv_pearson_r": 0.19484510579895675,
+      "high_vs_low_braak_auc": 0.5,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "Occipital_Visual_Cortex": {
+      "region": "Occipital_Visual_Cortex",
+      "n_samples": 53,
+      "n_donors": 53,
+      "apriori_vulnerability_rank": 4,
+      "cv_spearman_rho": -0.06284010782469104,
+      "cv_spearman_p": 0.6548632523868755,
+      "cv_spearman_ci_lower": -0.3505735127326774,
+      "cv_spearman_ci_upper": 0.21902511538000224,
+      "cv_pearson_r": -0.0056613074750974934,
+      "high_vs_low_braak_auc": 0.5942857142857143,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "BM44_IFG": {
+      "region": "BM44_IFG",
+      "n_samples": 53,
+      "n_donors": 53,
+      "apriori_vulnerability_rank": 3,
+      "cv_spearman_rho": 0.2664698281256343,
+      "cv_spearman_p": 0.0537677882952167,
+      "cv_spearman_ci_lower": -0.006825210786634811,
+      "cv_spearman_ci_upper": 0.5152611500900541,
+      "cv_pearson_r": 0.2190859038086696,
+      "high_vs_low_braak_auc": 0.6484375,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "CAUD": {
+      "region": "CAUD",
+      "n_samples": 52,
+      "n_donors": 52,
+      "apriori_vulnerability_rank": 5,
+      "cv_spearman_rho": -0.005927430479303988,
+      "cv_spearman_p": 0.9667341865404896,
+      "cv_spearman_ci_lower": -0.27051560227125465,
+      "cv_spearman_ci_upper": 0.26318445568608134,
+      "cv_pearson_r": -0.022400542624108448,
+      "high_vs_low_braak_auc": 0.5907692307692308,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "PUT": {
+      "region": "PUT",
+      "n_samples": 52,
+      "n_donors": 52,
+      "apriori_vulnerability_rank": 5,
+      "cv_spearman_rho": 0.0663900751723294,
+      "cv_spearman_p": 0.6400532798258235,
+      "cv_spearman_ci_lower": -0.2223856214825926,
+      "cv_spearman_ci_upper": 0.33967499859841926,
+      "cv_pearson_r": 0.029070711526177427,
+      "high_vs_low_braak_auc": 0.5888888888888889,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "AMY": {
+      "region": "AMY",
+      "n_samples": 50,
+      "n_donors": 50,
+      "apriori_vulnerability_rank": 2,
+      "cv_spearman_rho": -0.1948181392245958,
+      "cv_spearman_p": 0.17517526295615507,
+      "cv_spearman_ci_lower": -0.4698239692403517,
+      "cv_spearman_ci_upper": 0.09632272443651889,
+      "cv_pearson_r": -0.17330844567915152,
+      "high_vs_low_braak_auc": 0.40499999999999997,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "Nucleus_Accumbens": {
+      "region": "Nucleus_Accumbens",
+      "n_samples": 51,
+      "n_donors": 51,
+      "apriori_vulnerability_rank": 5,
+      "cv_spearman_rho": -0.0598487978103306,
+      "cv_spearman_p": 0.6765435875837963,
+      "cv_spearman_ci_lower": -0.3454267966355906,
+      "cv_spearman_ci_upper": 0.23597383998780097,
+      "cv_pearson_r": -0.020565718053209753,
+      "high_vs_low_braak_auc": 0.5622222222222222,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "BM7_SPL": {
+      "region": "BM7_SPL",
+      "n_samples": 50,
+      "n_donors": 50,
+      "apriori_vulnerability_rank": 3,
+      "cv_spearman_rho": 0.06847328736588876,
+      "cv_spearman_p": 0.6365783676847876,
+      "cv_spearman_ci_lower": -0.19272209348098718,
+      "cv_spearman_ci_upper": 0.3308405169672233,
+      "cv_pearson_r": 0.0625625250531414,
+      "high_vs_low_braak_auc": 0.4074074074074074,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    },
+    "Precentral_Gyrus": {
+      "region": "Precentral_Gyrus",
+      "n_samples": 49,
+      "n_donors": 49,
+      "apriori_vulnerability_rank": 4,
+      "cv_spearman_rho": 0.2803704693126621,
+      "cv_spearman_p": 0.05102597577985003,
+      "cv_spearman_ci_lower": -0.008974539837364594,
+      "cv_spearman_ci_upper": 0.5360319317195945,
+      "cv_pearson_r": 0.3264582057261304,
+      "high_vs_low_braak_auc": 0.5944055944055944,
+      "n_fdr_genes": 0,
+      "top_sig_genes": []
+    }
+  },
+  "replication_gse118553": {
+    "Entorhinal_Cortex": {
+      "region": "Entorhinal_Cortex",
+      "n_samples": 61,
+      "apriori_rank": 1,
+      "ad_vs_ctl_auc": 0.990990990990991
+    },
+    "Temporal_Cortex": {
+      "region": "Temporal_Cortex",
+      "n_samples": 83,
+      "apriori_rank": 2,
+      "ad_vs_ctl_auc": 0.9931761786600496
+    },
+    "Frontal_Cortex": {
+      "region": "Frontal_Cortex",
+      "n_samples": 63,
+      "apriori_rank": 3,
+      "ad_vs_ctl_auc": 0.9869565217391305
+    },
+    "Cerebellum": {
+      "region": "Cerebellum",
+      "n_samples": 60,
+      "apriori_rank": 5,
+      "ad_vs_ctl_auc": 0.9246411483253588
+    }
+  },
+  "conclusion": "One-sided permutation p=0.0402 (nominal); Holm adjustment is computed in paper/generate_latex_macros.py from the H1 and H3 p-values; 9/19 leave-one-region-out runs have p<0.05"
+}
