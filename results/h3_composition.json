@@ -1,0 +1,32 @@
+{
+  "markers_used": [
+    "RBFOX3",
+    "SNAP25",
+    "SYP",
+    "NEFL",
+    "SLC17A7",
+    "GAD1",
+    "MAP2"
+  ],
+  "n_markers": 7,
+  "corr_score_neuronal_lockbox": -0.7167489358947385,
+  "neuronal_alone_auc_lockbox": 0.7653061224489796,
+  "neuronal_alone_ci": [
+    0.6973445366132724,
+    0.8288005960246874
+  ],
+  "neuronal_alone_auc_train": 0.7959057071960298,
+  "adj_or_per_sd": 6.949401520580963,
+  "adj_or_ci": [
+    3.4830661673813683,
+    13.865421778812037
+  ],
+  "adj_lr_p": 4.617729616679497e-11,
+  "adj_auc_neuronal_age_sex": 0.7648853355775299,
+  "adj_auc_plus_score": 0.858405217757206,
+  "resid_neuronal_model_auc": 0.787081843046497,
+  "resid_neuronal_model_ci": [
+    0.7248412955465589,
+    0.8482055984621798
+  ]
+}

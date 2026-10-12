@@ -1,0 +1,56 @@
+{
+  "n_asymAD_donors": 28,
+  "n_AD_donors": 45,
+  "n_asymAD_samples": 32,
+  "n_AD_samples": 52,
+  "n_donors_with_multiple_samples": 11,
+  "neuronal_markers_used": [
+    "RBFOX3",
+    "SNAP25",
+    "SYP",
+    "NEFL",
+    "SLC17A7",
+    "GAD1",
+    "MAP2",
+    "CAMK2A"
+  ],
+  "n_perm": 5000,
+  "specs": {
+    "primary_93_cortical_donors": {
+      "n_neg": 717,
+      "n_pos": 262,
+      "unadjusted": {
+        "S": 2.3844455813012475,
+        "mean_t_neg": 1.2597674706146504,
+        "mean_t_pos": -1.124678110686597,
+        "null_sd": 0.7160910821550261,
+        "perm_p": 0.0005998800239952009
+      },
+      "adjusted": {
+        "S": 0.5069131297069547,
+        "mean_t_neg": -0.014990776705834668,
+        "mean_t_pos": -0.5219039064127894,
+        "null_sd": 0.4203004728072172,
+        "perm_p": 0.1225754849030194
+      }
+    },
+    "all_117_donors_region_centred": {
+      "n_neg": 793,
+      "n_pos": 868,
+      "unadjusted": {
+        "S": 2.315651013060364,
+        "mean_t_neg": 1.3033429014733442,
+        "mean_t_pos": -1.0123081115870196,
+        "null_sd": 0.5998219416564398,
+        "perm_p": 0.0001999600079984003
+      },
+      "adjusted": {
+        "S": 0.8831473907151599,
+        "mean_t_neg": 0.2592621461873285,
+        "mean_t_pos": -0.6238852445278315,
+        "null_sd": 0.4054488574204154,
+        "perm_p": 0.012397520495900819
+      }
+    }
+  }
+}

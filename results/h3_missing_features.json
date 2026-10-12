@@ -1,0 +1,53 @@
+{
+  "probe_audit": {
+    "probes_training_deposit": 47323,
+    "probes_lockbox_deposit": 42179,
+    "probes_only_in_training": 5144,
+    "probes_only_in_lockbox": 0
+  },
+  "n_features": 1000,
+  "n_missing": 109,
+  "missing_examples": [
+    "KDM5D",
+    "CAMK2A",
+    "PGM2L1",
+    "LRRTM4",
+    "NWD1",
+    "PVALB",
+    "FAM19A1",
+    "HIGD1B",
+    "MKX",
+    "ADCY2",
+    "ZNF204P",
+    "CDH15"
+  ],
+  "n_y_linked_missing": 2,
+  "auc_as_run": 0.8547233326320218,
+  "auc_mean_imputed": 0.8547233326320218,
+  "auc_refit_shared_genes": 0.8540921523248475,
+  "mean_z_given_to_missing": -7.615938743178619,
+  "median_p_as_run": 5.181117643849296e-08,
+  "median_p_imputed": 1.340535569144646e-13,
+  "sens_imputed_0.5": 0.0,
+  "spec_imputed_0.5": 1.0,
+  "train_expr_min": 0.350878915414983,
+  "train_expr_max": 12.0468695477995,
+  "lockbox_expr_min": 5.913582775,
+  "lockbox_expr_max": 14.19812218,
+  "train_expr_median": 3.97439564388226,
+  "lockbox_expr_median": 6.595895404,
+  "demographics_training_donor_level": {
+    "n_samples": 83,
+    "n_donors": 70,
+    "n_AD": 45,
+    "n_CTL": 25,
+    "age_AD_mean": 82.68888888888888,
+    "age_AD_sd": 9.84613958089487,
+    "age_CTL_mean": 71.54166666666667,
+    "age_CTL_sd": 16.924330740519483,
+    "age_diff_welch_p": 0.005657048753676724,
+    "female_AD": 25,
+    "female_CTL": 11,
+    "sex_chi2_p": 0.49819131421171503
+  }
+}

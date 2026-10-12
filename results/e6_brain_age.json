@@ -1,0 +1,12 @@
+{
+  "analysis": "E6_Transcriptomic_Brain_Age",
+  "clock_cv_pearson_r": -0.5905815632733191,
+  "clock_cv_pearson_p": 0.00014953981594145234,
+  "resilient_delta_age_mean": -15.776389704075049,
+  "demented_delta_age_mean": -16.0678612431474,
+  "delta_age_difference": -0.29147153907235257,
+  "t_statistic": 0.17904835665242944,
+  "p_value": 0.8585629971271667,
+  "conclusion": "Clock failed validation (cross-validated r <= 0.3); the acceleration comparison is uninterpretable.",
+  "clock_valid": false
+}

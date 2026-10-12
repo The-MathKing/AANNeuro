@@ -1,0 +1,61 @@
+{
+  "age_test_n_AD": 45,
+  "age_test_n_CTL": 24,
+  "age_missing_donors": 1,
+  "rank_model": {
+    "auc": 0.7922364822217547,
+    "median_p": 0.9972369519420169,
+    "sens_0.5": 0.979381443298969,
+    "spec_0.5": 0.0,
+    "frac_called_AD": 0.9897435897435898
+  },
+  "regional_adj_n_excl_zero": 5,
+  "regional_adj_excl_regions": [
+    "BM10_FP",
+    "BM22_STG",
+    "BM36_PHG",
+    "BM20_ITG",
+    "Precentral_Gyrus"
+  ],
+  "regional_adj_median_halfwidth": 0.263346971020293,
+  "regional_adj_excl_tiers": {
+    "BM10_FP": 3,
+    "BM22_STG": 2,
+    "BM36_PHG": 2,
+    "BM20_ITG": 2,
+    "Precentral_Gyrus": 4
+  },
+  "e2_five_scores": {
+    "n": 117,
+    "neuronal_beta": -0.8244930331296326,
+    "neuronal_p": 0.0013907796555968272,
+    "oligo_beta": -0.2424205223436614,
+    "oligo_p": 0.27827296962218695,
+    "endothelial_beta": -0.23139289185373818,
+    "endothelial_p": 0.28380965102198086,
+    "corr_oligo_neuronal": -0.3652310090065788
+  },
+  "continuous": {
+    "n": 117,
+    "rho_base": -0.3183923031965113,
+    "p_base": 0.0004679425596830903,
+    "rho_neuro_in_cdr_resid": -0.218136042799982,
+    "p_neuro_in_cdr_resid": 0.01814254537221748,
+    "rho_partial_neuro": -0.3411335401399691,
+    "p_partial_neuro": 0.00016731220269972183,
+    "corr_sc_neuro": 0.6690269597925939
+  },
+  "auc_null_sd_7v53": 0.11705429124100283,
+  "table6_calibration": {
+    "baseline_h3": {
+      "median_p": 7.366879372832107e-05,
+      "sens": 0.010309278350515464,
+      "spec": 1.0
+    },
+    "rank_transform_only": {
+      "median_p": 0.9917515304524122,
+      "sens": 1.0,
+      "spec": 0.0
+    }
+  }
+}

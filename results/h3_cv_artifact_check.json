@@ -1,0 +1,20 @@
+{
+  "null_avg_mean": 0.4863322638333684,
+  "null_avg_p5": 0.41104933726067744,
+  "null_avg_p95": 0.5604841678939616,
+  "frac_null_avg_le_real_mean": 0.005,
+  "seed42_value": 0.37018725015779513,
+  "n_repeats": 200,
+  "real_mean": 0.39292946560067327,
+  "real_sd": 0.027615208638204172,
+  "real_max": 0.47333263202188086,
+  "null_mean": 0.4841145066273932,
+  "null_p5": 0.3860903639806438,
+  "null_p95": 0.5689091100357669,
+  "frac_null_le_real_mean": 0.07,
+  "nn_opposite_obs": 0.6415384615384611,
+  "nn_opposite_null_mean": 0.5025700854700854,
+  "nn_opposite_null_lo": 0.42942948717948715,
+  "nn_opposite_null_hi": 0.5617307692307689,
+  "ad_with_exact_control": 92
+}
