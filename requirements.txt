@@ -1,6 +1,6 @@
-# AAN Neuroscience Research Prize — Python Dependencies
-# Cross-Species Transcriptomic Signature of Alzheimer's Disease Progression
-# Author: Aryan Padarthi
+# AAN Neuroscience Research Prize: Python Dependencies
+# Replication and Confound Audit of an Alzheimer's Disease Brain Transcriptomic Signature
+# Author: Aryan Padarthi (Allen High School)
 #
 # Install: pip install -r requirements.txt
 
@@ -15,8 +15,6 @@ scikit-learn>=1.2.0
 # Bioinformatics
 scanpy>=1.9.0
 anndata>=0.9.0
-# pybiomart  # For Ensembl gene ortholog mapping
-# combat      # For batch correction
 
 # Visualization
 matplotlib>=3.7.0
@@ -24,10 +22,6 @@ seaborn>=0.12.0
 
 # Dimensionality Reduction
 umap-learn>=0.5.0
-
-# Data Acquisition (optional — only for real data)
-# synapseclient  # For ROSMAP data download from Synapse
-# allensdk       # For Allen Brain Atlas queries
 
 # Utilities
 tqdm>=4.65.0

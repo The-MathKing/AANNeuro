@@ -1,8 +1,13 @@
 # Study Pre-Registration: Transcriptomic Signatures of Regional Vulnerability and Cognitive Resilience in Alzheimer's Disease
 
+**Author:** Aryan Padarthi  
+**Affiliation:** Allen High School, Allen, Texas, USA  
 **Date of Pre-Registration:** September 20, 2026  
-**Status:** LOCKED / PRE-ANALYSIS  
-**Working Title:** *Transcriptomic Signatures of Regional Vulnerability and Cognitive Resilience in Alzheimer's Disease: A Leakage-Aware, Multi-Cohort Analysis*
+**Status:** LOCKED / PRE-ANALYSIS PROTOCOL  
+**Target Submission:** American Academy of Neurology (AAN) Neuroscience Research Prize  
+**Working Title:** *Transcriptomic Signatures of Regional Vulnerability and Cognitive Resilience in Alzheimer's Disease: A Leakage-Aware, Multi-Cohort Analysis*  
+
+> **Note on Open Science:** This pre-registration document was locked prior to executing any statistical analyses on the primary biobank datasets (Mount Sinai Brain Bank GSE84422, Discovery GSE118553, and Lockbox GSE132903). Its purpose is to pre-specify hypotheses, regional ordering, and analytical guardrails to prevent p-hacking and selective reporting.
 
 ---
 
@@ -14,19 +19,19 @@ This study investigates regional vulnerability, cognitive resilience at matched 
 
 - **Hypothesis 1 (H1 - Regional Vulnerability):**
   Disease-associated transcriptomic progression scores and effect sizes across human brain regions track the regions' a-priori neuropathological (Braak-defined) order of tau neurofibrillary tangle involvement.
-  - *Primary Metric:* Spearman rank correlation ($\rho$) between regional effect size/transcriptomic disease score and the pre-specified vulnerability rank (Table 1).
-  - *Significance Threshold:* Permutation test $p < 0.05$ (5,000 permutations) after Holm family-wise error correction across H1–H3.
+  - *Primary Metric:* Spearman rank correlation (rho) between regional effect size/transcriptomic disease score and the pre-specified vulnerability rank (Table 1).
+  - *Significance Threshold:* Permutation test p < 0.05 (5,000 permutations) after Holm family-wise error correction across H1 to H3.
 
 - **Hypothesis 2 (H2 - Cognitive Resilience at Matched Pathology):**
-  Donors with high neuropathological burden but preserved cognition (Resilient: Braak $\ge$ IV, CDR $\le$ 0.5) exhibit distinct transcriptomic signatures compared to demented donors (Demented: Braak $\ge$ IV, CDR $\ge$ 1.0) when matched on age, sex, and neuropathological stage.
+  Donors with high neuropathological burden but preserved cognition (Resilient: Braak >= IV, CDR <= 0.5) exhibit distinct transcriptomic signatures compared to demented donors (Demented: Braak >= IV, CDR >= 1.0) when matched on age, sex, and neuropathological stage.
   - *Primary Metric:* Cross-validated classification AUC and differential expression effect sizes separating Resilient vs. Demented donors within cortical regions and pooled linear mixed-effects modeling.
-  - *Decision Rule / Power Gate:* If the Resilient group has $N < 10$ donors, H2 is automatically re-designated as *Exploratory*, and this status change will be transparently documented in all reports.
-  - *Significance Threshold:* Donor-bootstrap 95% CI of AUC excluding 0.50; Holm-adjusted $p < 0.05$.
+  - *Decision Rule / Power Gate:* If the Resilient group has N < 10 donors, H2 is automatically re-designated as *Exploratory*, and this status change will be transparently documented in all reports.
+  - *Significance Threshold:* Donor-bootstrap 95% CI of AUC excluding 0.50; Holm-adjusted p < 0.05.
 
 - **Hypothesis 3 (H3 - External Replication & Generalizability):**
   Transcriptomic progression signatures and classifiers trained on a discovery cohort (GSE118553 / MSBB) generalize to independent lockbox validation cohorts (GSE132903, MSBB cross-platform) without parameter refitting or target cohort leakage.
   - *Primary Metric:* External AUC and rank correlation on untouched lockbox cohorts.
-  - *Significance Threshold:* External AUC 95% bootstrap CI lower bound $> 0.50$; Holm-adjusted $p < 0.05$.
+  - *Significance Threshold:* External AUC 95% bootstrap CI lower bound > 0.50; Holm-adjusted p < 0.05.
 
 ---
 
@@ -36,9 +41,9 @@ Based on established neuropathological progression sequences (Braak & Braak 1991
 
 | Rank Tier | Stage Category | Anatomical Brain Regions (MSBB / GSE118553) | Expected Severity |
 |---|---|---|---|
-| **Tier 1 (Earliest)** | Transentorhinal / Entorhinal (Braak I–II) | BM28 / BM34 (Entorhinal cortex, Parahippocampal gyrus), Hippocampus (CA1/Subiculum) | Highest early transcriptomic disruption |
-| **Tier 2 (Limbic)** | Limbic / Temporal (Braak III–IV) | Amygdala, BM36 (Parahippocampal), BM38 (Temporal pole), BM20 (Inferior temporal), BM21/22 (Superior/Middle temporal) | Intermediate-to-high transcriptomic disruption |
-| **Tier 3 (Neocortical Association)** | Isocortical / Polymodal Association (Braak V–VI) | BM9/46 (Dorsolateral Prefrontal Cortex), BM10 (Anterior Prefrontal), BM7/39/40 (Inferior/Superior Parietal), BM24/32 (Anterior Cingulate) | Late neocortical disruption |
+| **Tier 1 (Earliest)** | Transentorhinal / Entorhinal (Braak I-II) | BM28 / BM34 (Entorhinal cortex, Parahippocampal gyrus), Hippocampus (CA1/Subiculum) | Highest early transcriptomic disruption |
+| **Tier 2 (Limbic)** | Limbic / Temporal (Braak III-IV) | Amygdala, BM36 (Parahippocampal), BM38 (Temporal pole), BM20 (Inferior temporal), BM21/22 (Superior/Middle temporal) | Intermediate-to-high transcriptomic disruption |
+| **Tier 3 (Neocortical Association)** | Isocortical / Polymodal Association (Braak V-VI) | BM9/46 (Dorsolateral Prefrontal Cortex), BM10 (Anterior Prefrontal), BM7/39/40 (Inferior/Superior Parietal), BM24/32 (Anterior Cingulate) | Late neocortical disruption |
 | **Tier 4 (Primary Sensory/Motor)** | Primary Cortical Areas (Sparing until end-stage) | BM4 (Primary Motor Cortex), BM17 (Primary Visual Cortex), BM41/42 (Primary Auditory Cortex) | Minimal early disruption / delayed vulnerability |
 | **Tier 5 (Subcortical / Cerebellar)** | Subcortical & Cerebellar | Caudate nucleus, Putamen, Cerebellar cortex / Cerebellum | Distinct non-tau pathways / Relative resistance |
 
@@ -69,19 +74,19 @@ Based on established neuropathological progression sequences (Braak & Braak 1991
 
 1. **Unit of Independence:**
    - The biological donor is the strict unit of splitting and cross-validation.
-   - Donor overlap between training and validation/test folds is strictly zero ($N_{overlap} = 0$).
+   - Donor overlap between training and validation/test folds is strictly zero (N_overlap = 0).
 
 2. **In-Fold Transformation & Feature Selection:**
    - Highly variable gene (HVG) selection, probe-to-gene summarization, scaling, imputation, dimensionality reduction (PCA/VAE), and hyperparameter tuning MUST occur strictly within each cross-validation fold.
    - No dataset-wide scaling or unsupervised pre-fitting on pooled data.
 
 3. **Uncertainty Quantification:**
-   - 95% Confidence Intervals (CIs) calculated via donor-level cluster bootstrap ($B = 2,000$ resamples).
-   - Permutation testing ($N_{perm} \ge 5,000$) with empirical p-values calculated as $p = \frac{\sum I(T_{perm} \ge T_{obs}) + 1}{N_{perm} + 1}$.
+   - 95% Confidence Intervals (CIs) calculated via donor-level cluster bootstrap (B = 2,000 resamples).
+   - Permutation testing (N_perm >= 5,000) with empirical p-values calculated as p = (sum I(T_perm >= T_obs) + 1) / (N_perm + 1).
 
 4. **Covariate Adjustment & Sensitivity:**
    - Models adjust for age, biological sex, post-mortem interval (PMI), and RNA quality (RIN/pH) where recorded.
-   - Age-matched sensitivity analyses (donors $\ge 65$ and 1:1 matching) required for all headline claims.
+   - Age-matched sensitivity analyses (donors >= 65 and 1:1 matching) required for all headline claims.
 
 5. **Automated Verification:**
    - Test suite (`pytest tests/`) validating zero donor leakage, raw file checksums, and absence of synthetic/random data injectors.
@@ -91,16 +96,16 @@ Based on established neuropathological progression sequences (Braak & Braak 1991
 
 ## 5. Exploratory Analyses (Tiered)
 
-All analyses outside H1–H3 are explicitly designated as *Exploratory* and will be cataloged in `ledger.csv`:
+All analyses outside H1 to H3 are explicitly designated as *Exploratory* and will be cataloged in `ledger.csv`:
 - **E1 (Leakage Taxonomy):** Systematic quantification of optimism bias across 4 leakage modes (donor leakage, split-wide feature selection, pooled normalization, test-set hyperparameter tuning).
 - **E2 (Cell-Type Deconvolution):** BRETIGEA/marker-based cell-type proportion adjustment (neuronal, astrocytic, microglial, oligodendrocytic, endothelial) to decouple neurodegeneration from intrinsic cell-state changes.
 - **E3 (Variance Partitioning):** Linear mixed modeling estimating donor-level systemic variance vs. region-specific variance.
 - **E4 (Dissociation Analysis):** Independent identification of CDR-associated genes controlling for Braak vs. Braak-associated genes controlling for CDR.
 - **E5 (Biological Anchoring):** Preranked GSEA against MSigDB Hallmarks, AMP-AD consensus co-expression modules (Wan et al. 2020), and AD GWAS risk genes (Bellenguez et al. 2022).
-- **E6–E10:** Transcriptomic brain age acceleration, cross-region transfer matrix, sparse stability-selected gene panel, age-matched sensitivity reruns, and cVAE orthogonalization benchmark.
+- **E6 to E10:** Transcriptomic brain age acceleration, cross-region transfer matrix, sparse stability-selected gene panel, age-matched sensitivity reruns, and cVAE orthogonalization benchmark.
 
 ---
 
-## 6. Pre-Registration Lock & Hash
-- **Signed:** Automated Pre-Registration Commit
-- **Execution Policy:** Any deviations from this protocol will be explicitly noted in the Supplementary Materials and logged in `ledger.csv`.
+## 6. Pre-Registration Protocol Sign-Off
+- **Signed:** Aryan Padarthi (Student Investigator, Allen High School)
+- **Execution Policy:** Any deviations from this protocol will be explicitly documented in the research paper and logged in `ledger.csv`.

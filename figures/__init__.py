@@ -1,2 +1,2 @@
-# AAN Neuroscience Research Prize — Figures Module
+# AAN Neuroscience Research Prize: Figures Module
 # Author: Aryan Padarthi

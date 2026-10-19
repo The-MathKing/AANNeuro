@@ -61,7 +61,7 @@ def download_allen_data():
     """
     try:
         from allensdk.core.mouse_connectivity_cache import MouseConnectivityCache
-        # This is a simplified query — actual API calls depend on specific datasets
+        # This is a simplified query, actual API calls depend on specific datasets
         print("[+] Allen SDK available for data queries")
         print("[!] Full Allen integration requires dataset-specific access token")
         print("[!] Using publicly available summary-level data for mouse models")

@@ -1,2 +1,2 @@
-# AAN Neuroscience Research Prize — Preprocessing Module
+# AAN Neuroscience Research Prize: Preprocessing Module
 # Author: Aryan Padarthi

@@ -1,2 +1,2 @@
-# AAN Neuroscience Research Prize — Models Module
+# AAN Neuroscience Research Prize: Models Module
 # Author: Aryan Padarthi

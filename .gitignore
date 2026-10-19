@@ -38,6 +38,11 @@ env/
 ._*
 Thumbs.db
 
-# Internal tooling
+# Internal tooling and portal artifacts
 humanize_manuscript.py
 tests/test_humanize_manuscript.py
+check_ai_detection.py
+abstract.*
+bibliography.*
+scratch/
+

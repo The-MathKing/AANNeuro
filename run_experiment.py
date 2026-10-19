@@ -27,7 +27,7 @@ def main():
     """Execute the verified experiment pipeline."""
     
     print("\n" + "█" * 75)
-    print("█  AAN Neuroscience Research Prize — Donor-Grouped Verified Pipeline     █")
+    print("█  AAN Neuroscience Research Prize: Donor-Grouped Verified Pipeline       █")
     print("█  Author: Aryan Padarthi                                                █")
     print("█" * 75 + "\n")
     

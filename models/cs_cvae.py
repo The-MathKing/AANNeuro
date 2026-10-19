@@ -564,7 +564,7 @@ def run_experiment():
     9. Enrichr Pathway Enrichment
     """
     print("=" * 80)
-    print("Leakage-Aware Multi-Region AD Transcriptomics — Revision Audit Draft 5 Pipeline")
+    print("Leakage-Aware Multi-Region AD Transcriptomics: Revision Audit Draft 5 Pipeline")
     print("=" * 80)
     
     root_dir = Path("/Volumes/2TB/AANneuro")

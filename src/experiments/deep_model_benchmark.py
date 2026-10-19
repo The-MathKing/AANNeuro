@@ -300,7 +300,7 @@ def run_deep_benchmark():
     df_summary.to_csv("results/table_model_ablation.csv", index=False)
 
     print("\n" + "=" * 75)
-    print("DEEP BENCHMARK COMPLETE — SUMMARY TABLE:")
+    print("DEEP BENCHMARK COMPLETE: SUMMARY TABLE:")
     print("=" * 75)
     print(df_summary[["name", "n_features", "cv_auc", "lockbox_auc", "lockbox_ci_lower", "lockbox_ci_upper", "residualized_lockbox_auc"]].to_string(index=False))
     print("\nSaved full results to results/model_ablation_results.json and results/table_model_ablation.csv")
